@@ -1,0 +1,238 @@
+utkarsh - from srm chennai 2020, playing football and tabala, IT branch 
+aaishik dutta - listening to music, csc , srm 
+bihu - from IT, 
+nikit - electronics from PES, 
+hirak - srm 2020, gaming & listening,  computer 
+sahil - srm, computer science, read books and play cricket 
+karthik - srm, palmist and  & handwriting , btech it 
+somen - computer science, srm, play games, guitar, car driving 
+george - pes, electronics, football and gaming 
+rishi - sastra, ec, play cricket, likes coding 
+nagesh - PES, electronics & comm, play guitar, cooking 
+sai charan - vit, computer sciene, photography & readin books 
+ganesh - ec, thapar punjab, cricket & guitarist, plays athlestics, and likes to code 
+venkat - sastra, tn, electronics & communication, reads novels and likes to code 
+monika - VIT, CS, wathing movies, and plays guitar 
+shalini, - it, SRM, painting & writes technical blogs 
+astha - from srm, CS, reading and dancing & kathak dancer 
+ankit - thapar university , cs, playing cricket 
+kishlay, - CS, play video games 
+yogapraprabhu - sastra, cs,
+vidya - sastra, CS, reading books, 
+ujjwal - thapar university, CS, plays sports, programming & debating 
+mahaveer - e&c, SRM,  cycling & plays TT 
+mansvi - srm, CS, likes travel, badmiton 
+chitraksh - srm, CS,  was with infy, photography, travelling 
+
+1.
+#include <stdio.h>
+
+void main() {
+	printf("Hello World"); 
+}
+
+2. 
+
+#include <stdio.h>
+
+void main() {
+	int x; 
+	printf("Enter a number"); 
+	scanf("%d", &x); 
+	printf("Number is %d", x)
+}
+
+Left to Right 
+
+Right to Left 
+PS	      Tech 
+
+
+
+2003 - I - C++
+2010 - T - Java, Web Server 
+2020 - COMB 
+
+
+W3C 
+1998-99
+HTML - CSS 
+	h1, h2, p, img, input etc 
+JavaScript 
+	- DHTML 
+XML 
+	empid, empname, empsal etc 
+XSL - CSS 
+XSLT
+	- xPath - xslTransformation 
+
+
+Http 1.0 
+http 1.1 
+http 2.0 
+
+
+
+1. Browser (chrome)
+2. VS Code / Sublime / Atom / Brackets 
+
+
+
+1. create a folder 
+2. 
+
+
+
+
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT employees (emp)>
+<!ATTLIST employees
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT emp (id,name)>
+<!ATTLIST emp
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT id (#PCDATA)>
+<!ATTLIST id
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT name (#PCDATA)>
+<!ATTLIST name
+  xmlns CDATA #FIXED ''>
+
+
+
+
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT employees (emp)+>
+<!ATTLIST employees
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT emp (id,name)>
+<!ATTLIST emp
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT id (#PCDATA)>
+<!ATTLIST id
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT name (#PCDATA)>
+<!ATTLIST name
+  xmlns CDATA #FIXED ''>
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="employees">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="5" minOccurs="3" ref="emp"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="emp">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="id"/>
+        <xs:element ref="name"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="id" type="xs:integer"/>
+  <xs:element name="name" type="xs:NCName"/>
+</xs:schema>
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<employees>
+	<emp>
+		<id>101</id>
+		<name>Harry</name>
+	</emp>
+</employees>
+
+
+
+
+
+DTD - old 
+XSD
+
+
+
+
+
+
+
+
+<?xml version="1.0"?>
+<employees>
+  <emp> 
+     <id>101 </id>
+     <name>Harry</name>
+  </emp>
+</employees>
+
+
+
+
+
+
+
+
+
+file:///Volumes/Kanchan/MyTrainings/sapient/freshers-2021-jan-xd/workspace/html-woks/Example01.html
+
+http 
+
+http://google.com 
+http://yahoo.com 
+
+
+
+Web Server  - 
+Apache - php, static etc 
+Tomcat - java 
+IIS - .net 
+django - python
+jetty - java 
+
+
+
+W/L/XAMP 
+Apache
+MySQL 
+Php
+Linux / windows / mac 
+
+
+http://localhost
+
+
+in css 
+Highest Priority - Inline 
+Next - Internal 
+
+
+
+
+
+
+
+
