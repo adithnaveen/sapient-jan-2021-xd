@@ -232,6 +232,17 @@ Next - Internal
 
 
 
+install and configure apache on windows 
+https://www.sitepoint.com/how-to-install-apache-on-windows/
+
+
+install and configure apache on mac 
+https://medium.com/@crmcmullen/how-to-install-apache-on-macos-10-13-high-sierra-and-10-14-mojave-using-homebrew-3cb6bf6e3cd4
+
+
+Web accessability 
+https://www.youtube.com/watch?v=20SHvU2PKsM
+
 
 
 
