@@ -1,5 +1,3 @@
-https://www.w3.org/Style/Examples/007/
-
 
 
 
@@ -118,12 +116,19 @@ upload the source code
 
  
  
+
+1. Need to come out with Style Guide 
+2. Create HTML connecting pages for the project 
+
  
- 
- 
- 
- 
- 
+ https://validator.w3.org/
+ https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+ https://www.w3.org/Style/Examples/007/
+
+
+ list of psedo classes 
+ https://www.w3schools.com/css/css_pseudo_classes.asp
+
  
  
  
