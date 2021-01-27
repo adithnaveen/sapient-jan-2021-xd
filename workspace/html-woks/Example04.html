@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <form action="">
+        <p><label>Number Field</label><input type="number" /> </p>
+        <p><label>Number Field</label><input type="number" min="2" max="15" value="5" /> </p>
+        <p><label>Number Field</label><input type="number" step="5" value="5" /> </p>
+        <p><label>Number Field</label><input type="number" step="5" value="5" min="10" max="50" /> </p>
+        <p><label>Number Field-Fractions</label><input type="number" value="0.6" min="0.0" max="8.10" step="0.2" /> </p>
+
+        <hr />
+
+        <p><label>Range Field</label><input name="range1" type="range" value="25" /> </p>
+        <p><label>Range Field</label><input name="range2" type="range" value="5" min="0" max="120" step="20" /> </p>
+        <p><label>Range Field</label><input name="range3" type="range" value="0.5" min="0.0" max="5.6" step="0.3" />
+        </p>
+        <p>
+            Enter URL: <input type="url">
+        </p>
+
+        <p>
+            Place around You:
+            <input type="text" list="suggestions">
+            <datalist id="suggestions">
+                <option value="bengaluru">Bengaluru</option>
+                <option value="bengaluru-rr-nagar">Bengaluru RR Nagar</option>
+                <option value="delhi">Delhi</option>
+                <option value="delhi-karolbagh">Dehi Karolbagh</option>
+                <option value="bengaluru-circle">Bengaluru Circle</option>
+                <option value="mysuru">Mysuru</option>
+                <option value="chennai">chennai</option>
+                <option value="hyderabad">hyderabad</option>
+            </datalist>
+
+        </p>
+
+        <p>Current Storage of the system
+            <meter value="100.0" low="0.0" high="100.0" high="80.0" optimum="40.0" />
+            300MB out of 1GB
+        </p>
+
+
+        <p>Progress :
+            <progress value="50.0" max="100.0">50%</progress>
+        </p>
+
+        <p>Text:
+            <input type="text">
+        </p>
+
+        <p>Search:
+            <input type="search">
+
+        </p>
+
+
+        <a href="http://google.com">Google.com</a>
+
+        <hr>
+
+
+        <button>submit</button>
+
+    </form>
+</body>
+
+</html>

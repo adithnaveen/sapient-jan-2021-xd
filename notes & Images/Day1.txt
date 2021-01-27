@@ -1,10 +1,10 @@
-utkarsh - from srm chennai 2020, playing football and tabala, IT branch 
+uttkarsh - from srm chennai 2020, playing football and tabala, IT branch 
 aaishik dutta - listening to music, csc , srm 
-bihu - from IT, 
-nikit - electronics from PES, 
+bibhu - from IT, 
+nikhil - electronics from PES, 
 hirak - srm 2020, gaming & listening,  computer 
 sahil - srm, computer science, read books and play cricket 
-karthik - srm, palmist and  & handwriting , btech it 
+kartik - srm, palmist and  & handwriting , btech it 
 somen - computer science, srm, play games, guitar, car driving 
 george - pes, electronics, football and gaming 
 rishi - sastra, ec, play cricket, likes coding 
@@ -17,12 +17,15 @@ shalini, - it, SRM, painting & writes technical blogs
 astha - from srm, CS, reading and dancing & kathak dancer 
 ankit - thapar university , cs, playing cricket 
 kishlay, - CS, play video games 
-yogapraprabhu - sastra, cs,
+yoga prabu - sastra, cs,
 vidya - sastra, CS, reading books, 
-ujjwal - thapar university, CS, plays sports, programming & debating 
+ujjawal - thapar university, CS, plays sports, programming & debating 
 mahaveer - e&c, SRM,  cycling & plays TT 
-mansvi - srm, CS, likes travel, badmiton 
+manasvi - srm, CS, likes travel, badmiton 
 chitraksh - srm, CS,  was with infy, photography, travelling 
+
+
+
 
 1.
 #include <stdio.h>

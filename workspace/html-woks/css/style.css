@@ -31,6 +31,22 @@ label {
     border-width: 2px;
 }
 
+a {
+    color: black;
+}
+
+a:hover {
+    color: brown;
+    font-weight: bolder;
+}
+
+a:visited {
+    color: chartreuse;
+}
+
+a:active{
+    color: cyan;
+}
 
 
 /*

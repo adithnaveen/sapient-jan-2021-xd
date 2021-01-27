@@ -95,6 +95,28 @@ BitBucket / GitHub / GitLab - Cloud
  http://127.0.0.1:5500/Example03.html
  
  
+ http://127.0.0.1:5500/Example03.html?text1=kumar&start=5&end=15&text2=&text3=&usrcolor=%23561029
+ 
+ 
+ http://127.0.0.1:5500/Example04.html?range1=81&range2=60&range3=2.7
+ 
+ 
+ 
+
+ building similar application for XT10X series 
+
+ https://woodmart.xtemos.com/demo-organic/demo/organic/
+ https://www.portotheme.com/wordpress/porto/shop35/
+ https://xstore.8theme.com/demos/organic/
+ 
+ 
+ARIA -> ACCESSIBILITY RICH INTERNET APPLICATION 
+ 
+share project document (AC's)
+
+upload the source code 
+
+ 
  
  
  
