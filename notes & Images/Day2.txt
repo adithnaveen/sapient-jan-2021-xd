@@ -1,0 +1,110 @@
+https://www.w3.org/Style/Examples/007/
+
+
+
+
+
+1. GIT (GitHub, BitBucket)
+	Attlasian - 
+		Confluence - Wiki (Non Technical Guy)
+		 -> Jira - TODO,InProgress, Done + Date + who has done what + Sprint / Kanban 
+			-> BitBucket (SCM) - Git Bash 
+			
+
+Git - CMD - Local Computer 
+
+BitBucket / GitHub / GitLab - Cloud 
+
+
+
+
+ 1070  vi newfile
+ 1071  git status
+ 1072  git add .
+ 1073  git status
+ 1074  clear
+ 1075  git commit -m "new file test 01"
+ 1076  git status
+ 1077  git push origin master
+ 1078  vi newfile
+ 1079  git add .
+ 1080  git commit -m "added another line to newfile"
+ 1083  git push origin master
+ 1084  clear
+ 1085  pwd
+ 1097  git log --oneline -n 3
+ 1098  clear
+ 1099  git log -n 3
+ 1100  git log --author="Naveen"
+ 1101  clear
+ 1102  git log --author="Hirak"
+ 1103  git log --oneline
+ 1104  git log --grep="day"
+ 1105  git log --grep="day" --oneline
+ 1106  git log --graph 
+ 1107  clear
+ 1108  git log --graph --oneline
+ 1109  git log --graph --oneline --decoration
+ 1110  git log --graph --oneline --decorate
+ 1111  git log --graph  --decorate
+ 1112  clear
+ 
+ 
+ git branching 
+ 
+ 
+ 1131  git branch
+ 1132  ls
+ 1133  cat first.txt
+ 1134  vi first.txt
+ 1135  git status
+ 1136  vi first.txt
+ 1137  cat first.txt
+ 1138  git status
+ 1139  git add . 
+ 1140  git status
+ 1141  git commit -m "added some content in fist"
+ 1142  git status
+ 1143  cat first.txt
+ 1144  git branch
+ 1145  git checkout master
+ 1146  cat first.txt
+ 1147  git branch
+ 1148  git merge newbranch
+ 1149  pwd
+ 1150  git branch
+ 1151  cat first.txt
+ 1152  clear
+ 1153  git branch
+ 1154  git checkout newbranch
+ 1155  git branch
+ 1156  git branch -a
+ 1157  git -graph
+ 1158  git log -graph
+ 1159  git log --graph
+ 1160  history -20
+ 
+ 
+ 
+ 
+ Get Request 
+ http://127.0.0.1:5500/Example03.html?text1=Harry&text2=Peter&text3=Becky
+ http://127.0.0.1:5500/Example03.html?text1=SAI&text2=UJJWAL&text3=UTTKARSH
+ 
+ Post Request
+ http://127.0.0.1:5500/Example03.html
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

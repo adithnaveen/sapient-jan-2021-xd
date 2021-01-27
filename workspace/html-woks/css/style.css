@@ -3,3 +3,47 @@ p {
     font-family: 'Courier New', Courier, monospace;
     
 }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+}
+
+label {
+    font-weight: bold;
+}
+
+.highlight {
+    background-color: bisque;
+}
+
+
+:invalid {
+    background-color :chocolate;
+}
+
+:valid {
+    background-color: cadetblue;
+}
+
+:required {
+    border-color: blue;
+    border-width: 2px;
+}
+
+
+
+/*
+h1 {}
+
+.myclass {}
+
+#myid {}
+
+:psedo-element {}
+
+h1, h2, h3 {}
+
+ol li {
+
+}*/ 

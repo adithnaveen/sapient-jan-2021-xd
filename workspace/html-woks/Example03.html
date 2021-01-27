@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script type="text/javascript">
+        function selectContentText() {
+            _text1 = document.myform.text1.value
+            _start = parseInt(document.myform.start.value)
+            _end = parseInt(document.myform.end.value)
+
+            alert(_text1.substring(_start, _end));
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- you can have not to validate the form at 2 levels 1 at form level tag -> novalidate 
+    or 2. on the button which you are pointing write -> formnovalidate -->
+
+    <form action="" name="myform">
+        <p><label for="text1">Field 1</label> <input class="highlight" type="text" name="text1" autofocus required
+                autocomplete="on"> </p>
+
+        <p>Selection Start <input type="text" name="start" size="3" value="5"> </p>
+        <p>Selection End <input type="text" name="end" size="3" value="15"> </p>
+        <p><button onclick="selectContentText()">ClickMe</button></p>
+
+        <p><label for="text2">Field 2</label> <input class="highlight" type="text" name="text2" autocomplete="off"> </p>
+        <p><label for="text3">Field 3</label> <input class="highlight" type="text" name="text3" autocomplete="off"> </p>
+        <p><label for="zipcode">ZipCode</label><input type="text" pattern="^[0-9]{6}$" placeholder="Zip 6 Numerics"></p>
+
+        <!-- in a form if you have 1 button the that will act as submit 
+        -->
+
+        <p><button>Save</button></p>
+    </form>
+</body>
+
+</html>
