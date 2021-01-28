@@ -27,6 +27,39 @@
             background-size: cover;
             background-repeat: no-repeat;
         }
+
+        #d3 {
+            border-radius: 50%;
+        }
+
+        #d4 {
+            border-width: 30px;
+            -webkit-border-image: url(./images/border_image_2.png) 20% stretch;
+            -moz-border-image: url(./images/border_image_2.png) 20% stretch;
+            -ms-border-image: url(./images/border_image_2.png) 20% stretch;
+            border-image: url(./images/border_image_2.png) 20% stretch;
+        }
+
+        #d5 {
+            background-image: linear-gradient(to right, red, cyan);
+        }
+
+        #d6 {
+            background-image: linear-gradient(to right, red, cyan, violet, blue);
+        }
+
+        #d7 {
+            background-image: repeating-linear-gradient(red, cyan, violet, blue);
+        }
+
+        #d8 {
+            background-image: radial-gradient(red, yellow)
+        }
+
+        #tampa {
+            border-radius: 50%;
+            box-shadow: 0px 0px 40px red;
+        }
     </style>
 </head>
 
@@ -35,6 +68,19 @@
     <div class="box" id="d1"></div>
     <div class="box" id="d2"></div>
     <div class="box" id="d3"></div>
+    <div class="box" id="d4"></div>
+    <div class="box" id="d5"></div>
+    <div class="box" id="d6"></div>
+    <div class="box" id="d7"></div>
+    <div class="box" id="d8"></div>
+
+    <div></div>
+    <div class="box">
+        This is a sample div This is a sample div This is a sample div This is a sample div This is a sample div This is
+        a sample div This is a sample div This is a sample div This is a sample div
+    </div>
+    <hr />
+    <img src="./images/tampa.jpg" alt="tampa image" id="tampa">
 </body>
 
 </html>
