@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        h1:hover {
+            color: brown;
+        }
+
+        input:invalid {
+            border: 1px solid red;
+        }
+
+        p {
+            display: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: darkgray;
+            padding: 20px;
+        }
+
+        div:hover p {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--
+    form#f1>(div>input[type=text][required][name=username])+(div>button{Submit})
+    -->
+    <h1>HTML5 Demos</h1>
+    <br>
+
+    <form action="" id="f1">
+        <div><input type="text" required="required" name="username"></div>
+        <div><button>Submit</button></div>
+    </form>
+
+    <hr>
+    <div>
+        Hover on me...
+        <p>Hi i'm from para</p>
+    </div>
+
+</body>
+
+</html>

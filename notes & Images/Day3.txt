@@ -1,0 +1,80 @@
+What is Web Accessibility
+Web accessibility means that websites, tools, and technologies are designed and developed so that people with disabilities can use them. More specifically, people can:
+
+perceive, understand, navigate, and interact with the Web
+contribute to the Web
+Web accessibility encompasses all disabilities that affect access to the Web, including:
+
+auditory
+cognitive
+neurological
+physical
+speech
+visual
+
+
+
+Web Accessibility Initiative – Accessible Rich Internet Applications (WAI-ARIA)
+
+
+voice search 
+sensory methods with some hardware 
+text-to-speach 
+contrasting colors - A / AA / AAA 
+*) https://www.w3.org/WAI/WCAG21/Understanding/conformance#levels
+
+*) https://www.w3.org/WAI/WCAG21/Understanding/conformance#dfn-conforming-alternate-version		
+
+
+
+<html>
+<body>
+    <p>This is My First Para</p>
+    <p>This is My Second Para</p>
+    <p>This is My testing Para</p>
+    <h1 style="font-family: Arial, Helvetica, sans-serif;">Welcome </h1>
+    <h2>Welcome </h2>
+    <h3>Welcome </h3>
+    <h4>Welcome </h4>
+    <h5>Welcome </h5>
+
+    <button onclick="callme()">Click Me</button>
+    <button onclick="checkVote()">Click To Vote</button>
+</body>
+</html>
+
+html -> DOM -> Normal User 
+     -> A-DOM -> Specially Challeged People 
+
+
+Document Aria 
+https://www.w3.org/TR/wai-aria-1.1/img/rdf_model.svg - image 
+https://www.w3.org/TR/wai-aria-practices-1.1/#button - document 
+
+
+
+<h1 style="color:black;"></h1>
+
+
+KT
+Aaishik Dutta - A, AA, AAA Standars
+Standards for Web Accessibility - 508 - Nagesh 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

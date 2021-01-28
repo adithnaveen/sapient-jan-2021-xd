@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        div#videos>video {
+            height: 200px;
+        }
+    </style>
+
+    <script type="text/javascript">
+
+        function init() {
+            var videos = document.querySelectorAll("div#videos>video")
+
+            videos.forEach(function (v1) {
+                v1.onmouseenter = function () {
+                    v1.play();
+                };
+
+                v1.onmouseout = function () {
+                    v1.pause();
+                }
+            })
+        }
+        window.onload = init;
+
+    </script>
+
+</head>
+
+<body>
+
+    <h1>HTML 5 Video Demo</h1>
+
+    <img src="./images/tampa.jpg" alt="Tampa Image" id="tampa">
+    <button id="btnFS">FullScreen</button>
+
+    <script type="text/javascript">
+
+        img1 = document.querySelector("#tampa")
+        btn1 = document.getElementById("btnFS")
+
+        btn1.onclick = function () {
+            if (img1.webkitRequestFullScreen) {
+                img1.webkitRequestFullScreen();
+            } else if (img1.mozRequestFullScreen) {
+                img1.mozRequestFullScreen()
+            } else if (img1.requestFullScreen) {
+                img1.requestFullScreen()
+            }
+        }
+    </script>
+
+    <hr />
+
+    <div class="" id="videos">
+        <video src="./videos/baby-and-dog.mp4" type="video/mp4">
+            <track label="English Subtitles" kind="subtitles" srclang="en" src="">
+            <h3>Your Browser does not support the video tag</h3>
+        </video>
+
+        <video src="./videos/billy.mp4" type="video/mp4">
+            <h3>Your Browser does not support the video tag</h3>
+        </video>
+
+        <video src="./videos/burningtruck.mp4" type="video/mp4">
+            <h3>Your Browser does not support the video tag</h3>
+        </video>
+    </div>
+
+
+
+    <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2rcSeVF_5k0" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+
+
+</body>
+
+</html>
