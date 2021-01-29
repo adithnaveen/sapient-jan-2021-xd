@@ -59,6 +59,26 @@
         #list1 li:last-child {
             border-radius: 0 0 10px 10px;
         }
+
+        #list1 li:hover {
+            background-color: rgba(125, 200, 30, .4);
+        }
+
+        #list1 li:nth-child(even) {
+            background-color: rgba(216, 189, 228, 0.4);
+        }
+
+        #list1 li:nth-child(4) {
+            background-color: blueviolet !important;
+            color: aliceblue;
+            font-weight: bolder;
+        }
+
+        .active {
+            background-color: rgb(66, 233, 191) !important;
+            color: aliceblue;
+            font-weight: bolder;
+        }
     </style>
 
 </head>
@@ -157,7 +177,7 @@
         <li>List Item 3</li>
         <li>List Item 4</li>
         <li>List Item 5</li>
-        <li>List Item 6</li>
+        <li class="active">List Item 6</li>
         <li>List Item 7</li>
     </ul>
 

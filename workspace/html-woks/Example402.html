@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        #img2 {
+            transform: scale(1.5);
+        }
+
+        #img3 {
+            transform: scale(.3);
+        }
+
+        #img4:hover {
+            transform: rotateX(45deg) rotateY(45deg) scale(1.5);
+            transition: all 1s ease-in-out;
+
+        }
+
+        #img5:hover {
+            transform: translateX(50px) translateY(50px);
+            transition: all 500ms ease-in-out;
+        }
+
+        #img6:hover {
+            transform: skewY(50deg);
+        }
+
+        h1 {
+            color: black;
+            background-color: azure;
+            transition: all 500ms ease-in-out;
+        }
+
+        h1:hover {
+            font-size: 50pt;
+            color: aliceblue;
+            background-color: cornflowerblue;
+        }
+
+        #img7 {
+            margin: 100px;
+            display: block;
+            transform: rotate(-180deg);
+            transition: all 800ms ease-in;
+            opacity: 1;
+        }
+
+        #img7:hover {
+            transform: rotate(0deg) scale(1.5);
+            opacity: .2;
+            transform: translateX(-100px) translateY(-100px);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is my H1 Tag</h1>
+    <br><br>
+    <img src="./images/tampa.jpg" alt="tampa" id="img1">
+    <img src="./images/tampa.jpg" alt="tampa" id="img2">
+    <img src="./images/tampa.jpg" alt="tampa" id="img3">
+    <img src="./images/tampa.jpg" alt="tampa" id="img4">
+    <img src="./images/tampa.jpg" alt="tampa" id="img5">
+    <img src="./images/tampa.jpg" alt="tampa" id="img6">
+    <br>
+    <img src="./images/tampa.jpg" alt="tampa" id="img7">
+</body>
+
+</html>
