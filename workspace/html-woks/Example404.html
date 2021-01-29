@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Media Queries</title>
+
+    <style type="text/css">
+        @media print {
+            .bigscreen {
+                display: block;
+            }
+
+            .smallscreen {
+                display: block;
+            }
+
+            .commonimgs {
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 800px) and (max-width: 1200px) {
+            .bigscreen {
+                display: block;
+            }
+
+            .smallscreen {
+                display: block;
+            }
+        }
+
+        @media screen and (min-width:400px) and (max-width: 800px) {
+            .bigscreen {
+                display: block;
+            }
+
+            h1 {
+                font-size: smaller;
+            }
+
+            div>img {
+                height: 100px;
+                width: 100px;
+            }
+
+            .smallscreen {
+                display: block;
+            }
+        }
+
+
+        @media screen and (max-width: 400px) {
+            img {
+                display: none;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+
+
+    <div class="bigscreen">
+        <h1>CSS3 Media Query on Big Screen</h1>
+        <img src="./images/tampa.jpg" alt="tampa">
+    </div>
+
+    <div class="smallscreen">
+        <h1>CSS3 Media Query on Small Screen</h1>
+        <img src="./images/cake.jpg" alt="tampa">
+    </div>
+
+    <img src="./images/fireworks.jpg" alt="fireworks" class="commonimgs">
+    <img src="./images/eye.jpg" alt="eye" class="commonimgs">
+
+</body>
+
+</html>

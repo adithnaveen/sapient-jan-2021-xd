@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        /*define the animation "spin" */
+
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+
+        @keyframes spin {
+            0% {
+                transform: scale(0.5);
+            }
+
+            50% {
+                transform: translateX(150px) translateY(150px) scale(1) rotate(180deg);
+            }
+
+            100% {
+                transform: scale(0.5);
+            }
+        }
+
+        @keyframes danceEffect {
+            0% {
+                transform: translateX(0px) rotate(0deg);
+            }
+
+            33% {
+                transform: translateX(30px) rotate(45deg);
+                opacity: .5;
+
+            }
+
+            66% {
+                transform: translateX(-30px) rotate(-45deg);
+                opacity: .5;
+            }
+
+            100% {
+                transform: translateX(0px) rotate(0deg);
+            }
+        }
+
+        #tampa {
+            animation: spin 1s 2 ease-in-out;
+        }
+
+        #cake:hover {
+            animation: danceEffect 1s 3 ease-in-out;
+        }
+
+        @font-face {
+            font-family: "My Google Font";
+            src: url(./fonts/googlefont1.woff2);
+        }
+
+        h1 {
+            font-family: My Google Font;
+            font-size: 30pt;
+        }
+
+        .myh1 {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        h2 {
+            font-family: 'Hachi Maru Pop', cursive;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img src="./images/tampa.jpg" alt="" id="tampa">
+
+    <img src="./images/cake.jpg" alt="" id="cake">
+
+    <hr>
+
+    <h1>This is HTML5 with CSS on google web font</h1>
+    <h1 class="myh1">This is HTML5 with CSS on google web font</h1>
+    <h2>this is another web font</h2>
+</body>
+
+</html>
