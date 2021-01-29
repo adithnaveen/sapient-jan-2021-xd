@@ -1,3 +1,63 @@
 /* CSS Document for Screens */
 
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap');
+
+body{
+    font-family:'Open Sans', sans-serif;
+    font-size: 16pt;
+    font-weight: 300;
+    color: #535252;
+    margin: 0;
+    padding: 0;
+}
+
+.page{
+    max-width: 1200px; margin: 0 auto;
+    position: relative;
+}
+/*Text */
+/* N W S E*/
+h1 {   margin: 0 0 1em 0;    font-size: 2.5em ; font-weight: 700; color: azure;}
+h2 {   margin: 0 0 .5em 0;    font-size: 1.8em ; font-weight: 700; line-height: 1.1em;}
+h3 {   margin: 0 0 .5em 0;    font-size: 1.2em ; font-weight: 600; line-height: 1.1em;}
+h4 {   margin: 0 0 .3em 0;    font-size: .7em ; font-weight: 400; }
+
+p {    margin: 0 0 1em 0; }
+
+a{color: rgb(49, 148, 206);}
+a:visited{   color: rgb(113, 99, 134);}
+
+
+/*Header */
+
+
+
+header{
+    height: 430px;
+    background: rgb(226, 3, 3)  url(../graphics/banner_1200.jpg) no-repeat center;
+   position: relative;
+}
+
+header a.logo {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    display: block;
+    width: 160px;
+    height: 60px;
+    background: url(../graphics/logo.svg) no-repeat 0 0;
+    background-size: contain;
+}
+
+
+header a.logo span {
+    display: none;
+}
+
+header div.hero {
+    position: absolute;
+    width: 42%;
+    top: 80px;
+    left: 55%;
+}
