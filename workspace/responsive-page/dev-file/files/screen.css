@@ -422,3 +422,38 @@ nav>ul > li > a[aria-haspopup="true"]::after {
     footer div.content { display: block; margin-top: 15px;}
     footer div.content a {margin: 0 20px 0 0;}
 }
+
+
+
+@media screen and (max-width:425px) {
+
+    /* Header*/
+    header {height: 110px; background-image: url(../graphics/banner_425.jpg);}
+   header a.logo { 
+       height: 36px; background: rgba(0, 0, 0, .65) url(../graphics/logo_small.svg) no-repeat center center;
+       background-size: 126px 17px;
+   }
+
+   header div.hero {width: 100%; left: 0px; top: 46px; text-align: center;}
+   header div.hero h1 {font-size: 1em; margin-bottom: 10px;}
+   header div.hero a.btn {padding: 2px 30px; font-size: .8em;}
+   header div.hero a.btn span {display: none;}
+
+   /*Section - How-to*/
+   section.how-to aside div.content {padding:140px 20px 20px 0px}
+   section.how-to aside div.content img {width: auto; height: 100px; top: 30px;}
+   section.how-to blockquote {margin: 10px 40px 0 20px;}
+
+   /*Footer*/
+   footer::after {
+       content: ''; 
+       display: block;
+       clear: both;
+   }
+   footer div.content a {
+       display: inline-block;
+       margin: 0 0 10px 0;
+       float: left;
+       clear: both;
+   }
+} 
