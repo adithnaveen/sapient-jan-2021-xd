@@ -209,7 +209,7 @@ nav::after {
     clear: both;
 }
 
-nav ul {    list-style: none; margin: 0; padding: 0;}
+nav ul {list-style: none; margin: 0; padding: 0;}
 nav ul li:hover { background-color: #535252; }
 nav ul li:hover > ul {display: block;}
 
@@ -218,12 +218,12 @@ nav ul li a {
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
-    width: 125px;
+    width: 155px;
     position: relative;
 }
 
 nav ul li a:visited { color: aliceblue;}
-nav ul li a:hover {background-color: #5a0f0f;}
+nav ul li a:hover {background-color: #b90f0f;}
 
 nav ul ul {position: absolute; top: 100%; background-color: #5a0f0f; display: none;}
 nav ul ul li {position: relative;}
@@ -233,3 +233,18 @@ nav ul ul ul {left: 100%; top: 0px;}
 /* Top Nav Bar - top level */ 
 nav > ul {padding-left: 200px;}
 nav > ul > li {float: left;}
+nav > ul > li > a {width: auto; padding: 10px 20px 30px 20px;}
+
+
+/* Nav - arrow */ 
+nav a[aria-haspopup="true"]::after {
+    content: '';
+    display: block;
+    width: 0px;  height: 0px;
+    position: absolute;
+    margin-left: 3px;
+    top: 16px; right: 15px;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid white;
+}
