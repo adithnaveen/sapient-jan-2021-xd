@@ -78,16 +78,38 @@ ver 2
 <b>  <strong> 
 
 
+.btn{
+	padding:10px;
+	margin:12px; 
+}
+
+.btn.btn-danger{
+	background-color:red; 
+}
+
+.btn.btn-primary{
+	background-color:blue; 
+}
+
+<input type="button" value="MyButton" class="btn btn-danger">
+
+<input type="button" value="MyButton" class="btn btn-primary">
 
 
 
+nav ul ul li {}
 
-
-
-
-
-
-
+<nav>
+	<ul>
+		<li>About Us</li>
+		<li>Design</li>
+		<li>Product</li>		
+			<ul>
+				<li></li>
+			</ul>
+		<li>Contact</li>	
+	</ul>		
+</nav>
 
 
 

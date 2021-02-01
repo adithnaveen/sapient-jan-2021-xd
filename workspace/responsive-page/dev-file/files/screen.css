@@ -237,14 +237,188 @@ nav > ul > li > a {width: auto; padding: 10px 20px 30px 20px;}
 
 
 /* Nav - arrow */ 
+
 nav a[aria-haspopup="true"]::after {
     content: '';
     display: block;
-    width: 0px;  height: 0px;
+    width: 0px; 
+    height: 0px;
     position: absolute;
-    margin-left: 3px;
     top: 16px; right: 15px;
-    border-top: 7px solid transparent;
-    border-bottom: 7px solid transparent;
-    border-left: 7px solid white;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent; 
+    border-left: 4px solid #fff;
+} 
+
+nav>ul > li > a[aria-haspopup="true"]::after {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #fff;
+    left:20px; 
+    right: auto;
+    bottom: 15px;
+    top: auto;
+}
+ 
+
+
+
+/*Media Queries*/
+
+@media screen and (max-width:1000px) {
+    h1 {font-size: 2.4em;}
+
+    /*Header */ 
+    header div.hero {left: 55%;}
+    header div.hero h1{margin-bottom: 20px;}
+    /*Section -Atomosphere*/
+    section.atmosphere article {padding-left: 400px; background-size: 375px auto;}
+}
+
+@media screen and (max-width:825px) {
+    h1 {font-size: 1.9em;}
+
+
+    /*Header */ 
+    header {height: 300px; background-image: url(../graphics/banner_825.jpg); }
+    header div.hero {left: 45%; top: 120px;}
+
+
+     /*Section -Atomosphere*/
+     section.atmosphere article {padding-left: 325px; background-size: 300px auto;}
+
+     /*Section -How-to */ 
+     section.how-to blockquote p.quote {
+        font-size: .9em;
+        line-height: 1em;
+     }
+     section.how-to blockquote {
+         font-size: .85em;
+     }
+}
+
+@media screen and (max-width:760px){
+    /*General */ 
+        h1{font-size: 1em;}
+        h2{font-size: 0.8em;}
+        h3{font-size: 0.7em;}
+
+        a.btn {font-size: 1.1em;}
+
+    /*Section -Header*/ 
+    header a.logo{width: 145px; height: 60px;}
+    header div.hero {top: 140px; left: 40px;}
+
+    /*Section - Main */ 
+    section.main {margin-top: 10px;  margin-bottom: 10px;}
+    section.main aside div.content {
+        background-size: 50px 50px;
+        padding-top: 60px;
+    }
+    /*Section -How-to*/ 
+    section.how-to aside div.content img {width: 80%;}
+
+    /*Navigation*/ 
+    nav {padding-top: 80px;}
+    nav > ul {padding-left: 10px;}
+}
+
+
+
+
+
+@media screen and (max-width:625px) {
+    h1 {font-size: 1em;}
+    h3 {margin-bottom: 0px;}
+    a.btn {font-size: .9em;}
+
+    /*Header*/
+    header {height: 160px; background-image: url(../graphics/banner_625.jpg) ; background-position: left top;}
+    header a.logo {
+        width: 100%; height: 66px;
+        left: 0px; top: 0px;
+        background-color: rgba(0, 0, 0, .65);
+        background-size: 112px 46px;
+        background-position: 20px center;
+    }
+
+    header div.hero {width:300px; top: 85px; left: 130px;}
+    header div.hero h1 {margin-bottom: 10px;}
+
+
+    /* Section - main */
+    section.main aside {width: 100%; float: none; text-align: left;}
+    section.main aside div.content { 
+        margin: 8px 20px 8px 0px;
+        padding: 5px 0px 10px 85px;
+        background-size: 50px 50px;
+        background-position: 20px 5px;
+    }
+
+    /* Section - Atmosphere */
+    section.atmosphere article {padding:160px 20px 0px 0px; background-size: 300px auto; min-height: initial; }
+
+    /*Section - How-to*/
+    section.how-to aside {width: 100%; float: none; margin: 0; position: relative;}
+    section.how-to aside div.content {padding:20px 20px 20px 150px; }
+    section.how-to aside div.content p {font-size: .9em;}
+    section.how-to aside div.content img {
+        display: inline-block;
+        width: 125px;
+        position: absolute;
+        top: 30px; left: 0px;
+    }
+
+    section.how-to blockquote {
+        margin: 0 20px 0 40px;
+        width: 90%;
+        padding: 1px 0px 20px 0px;
+        position: relative;
+    }
+
+    section.how-to blockquote  p.credit {
+        margin-bottom: 0%;
+    }
+    /*Navigation*/
+    nav {position: static; width: auto; padding: 20px 15px; background-color: #4b0a0c;}
+    nav ul, 
+    nav ul ul, 
+    nav ul, ul, ul {
+        display: block; position: static;
+    }
+
+    nav>ul {padding:0;}
+    nav>ul>li {float: none; margin-top: 25px;}
+
+    nav ul li:hover {background: none;}
+
+    nav ul li a {
+        width: auto;
+        display: block;
+        margin: 8px 10px;
+        padding: 8px 15px;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    nav ul li a:hover {
+        background-color: rgba(255, 255, 255, 0.2) ;
+    } 
+
+    nav ul ul  {
+        background: none;
+    }
+
+    nav ul ul li a {
+        margin-left:30px; 
+    }
+
+    nav ul ul ul li a {
+        margin-left:60px; 
+    }
+
+    nav a[aria-haspopup="true"]::after {display: none;}
+ 
+    /*Footer*/
+    footer div.content { display: block; margin-top: 15px;}
+    footer div.content a {margin: 0 20px 0 0;}
 }
