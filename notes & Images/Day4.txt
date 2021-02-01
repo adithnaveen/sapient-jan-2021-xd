@@ -1,1 +1,50 @@
+screen
+---------------------------------
+ Screen - 1366×768 - 11"
+ Tablet (small) - 
+ Mobile (Smallest) - iPhonex, Samsung Galaxy 
  
+ 
+ <html>
+ 	<body>
+		<h1>hello</h1>
+	</body>
+ </html>
+ 
+ 
+
+ @media screen and (min-width: 800px) and (max-width: 1200px) {
+     .bigscreen {
+         display: block;
+     }
+
+     .smallscreen {
+         display: block;
+     }
+ }
+
+ @media screen and (min-width:400px) and (max-width: 800px) {
+     .bigscreen {
+         display: block;
+     }
+
+     h1 {
+         font-size: smaller;
+     }
+
+     div>img {
+         height: 100px;
+         width: 100px;
+     }
+
+     .smallscreen {
+         display: block;
+     }
+ }
+
+
+ @media screen and (max-width: 400px) {
+     img {
+         display: none;
+     }
+ }

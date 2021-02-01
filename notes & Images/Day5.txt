@@ -1,0 +1,101 @@
+<div class="container">
+	<div class="header">
+		<h1>this is my header </h1>
+	</div> 
+	<div class="aside">
+		<div class="article">
+			<p>This is my para graph</p>
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+	<header>
+		<h1>This is my header</h1>
+	</header>
+	<aside>
+		<article>
+			<p>this is my Para </p>
+		</article>
+	</aside>
+</div>
+
+
+
+<div class="box"></div>
+<aside></aside>
+
+
+
+table 
+frameset 
+	framesrc  rows 50%, 50%
+			  cols 50%, 50%
+
+<frameset rows="50%, 50%">
+	<frame src="h1.html" /> 
+	<frame src="h2.html" /> 
+</frameset>			  
+
+			  
+<iframe width="300" > 
+	<div class="aside"><div>
+	<div class="article"><div>
+	<div class="section">
+		
+	<div>
+	<div><div>
+	
+</iframe>
+
+
+
+
+
+
+
+
+
+
+ver 1 
+<p>Hi</p>
+ 12pt, Times 
+
+-----------------------------------------------------------
+ver 2 
+
+<style>
+	p {
+		font-size:12pt; 
+		font-family:"Times"; 
+	}
+</style>
+
+<p>Hi</p>
+
+
+<b>  <strong> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
