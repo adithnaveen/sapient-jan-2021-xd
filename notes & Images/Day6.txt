@@ -1,0 +1,76 @@
+Screen 
+
+1. Print 
+2. Css Grid 
+3. !important 
+4. Mobile First 
+5. Conditional CSS 
+6. Responsive vs Adaptive 
+7. fluid - flexi box model (responsive picture)
+
+
+
+Web Accesibility 
+CSS Style Guide 
+
+
+:autofocus 
+<div tabindex='0'>
+</div>
+
+<div tabindex='2'>
+</div>
+
+
+<div tabindex='1'>
+</div>
+
+
+
+
+img {
+  filter: grayscale(100%);
+}
+
+
+
+References: 
+
+
+https://www.geeksforgeeks.org/css-conditional-rules/
+
+Patterns 
+https://developers.google.com/web/fundamentals/design-and-ux/responsive/patterns
+
+Patterns - ppt 
+https://www.slideshare.net/theresaneil/mobile-design-strategic-solutions/69-Whats_the_pattern
+
+Test Mobile Friendly 
+https://search.google.com/test/mobile-friendly
+
+
+
+
+
+
+TEAM1
+TEAM2
+TEAM3
+TEAM4
+TEAM5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

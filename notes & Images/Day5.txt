@@ -112,6 +112,8 @@ nav ul ul li {}
 </nav>
 
 
+branching stratergy 
+style guide for each batch 
 
 
 
