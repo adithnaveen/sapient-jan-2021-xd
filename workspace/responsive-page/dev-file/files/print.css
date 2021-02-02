@@ -47,5 +47,78 @@ header{
 }
 
 header::after{
-    content: url(../graphics/banner_1200_print.jpg);
+    content: url(../graphics/banner_1300_print.jpg);
+    width: 90%;
+}
+
+header a.logo {
+    display: block;
+    width: 145px;
+    height: 60px;
+    position: absolute;
+    top: 20px; left: 20px;
+}
+
+header a.logo::before {
+    content: url(../graphics/logo_print.svg);
+}
+
+header a.logo::after {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 150px;
+}
+
+header div.hero {
+    width: 75%;
+    position: absolute;
+    top: 120px;
+    left: 20px;
+}
+header div.hero a::after{
+    display: block;
+}
+header a.logo span {
+    display: none;
+}
+
+/* All sections */ 
+section {
+    margin-bottom: 50px;
+}
+section::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+/*Section - Main */ 
+section.main {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+section.main aside {
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+section.main aside div.content {
+    margin: 15px;
+}
+
+section.main aside div.content h3 a::after {
+    display: block;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section.main aside div.content.trending::before {
+    content: url(../graphics/icon_star_print.svg);
+}
+section.main aside div.content.find-it::before {
+    content: url(../graphics/icon_marker_print.svg);
+}
+section.main aside div.content.tools::before {
+    content: url(../graphics/icon_gear_print.svg);
 }
