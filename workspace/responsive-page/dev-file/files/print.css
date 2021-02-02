@@ -2,6 +2,50 @@
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,700,300);
 
+.page {
+    margin:0.5cm
+}
 
+body {
+    color: #000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
 
+h1, h2, h3, h4 {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
 
+h1 {font-size: 1.6em;}
+h2 {font-size: 1.4em;}
+h3 {font-size: 1.2em;}
+h4 {font-size: 1.1em;}
+
+p {
+    font-size: 0.9;
+    margin: 0 0 1em 0;
+}
+
+a, a:visited {margin: 0 0 1em 0; text-decoration: none;}
+
+a::after, a:visited::after {
+    content: '('attr(href) ')';
+    font-style: italic;
+    word-wrap: break-word;
+}
+
+nav {
+    display: none;
+}
+
+header{
+    position: relative;
+}
+
+header::after{
+    content: url(../graphics/banner_1200_print.jpg);
+}
