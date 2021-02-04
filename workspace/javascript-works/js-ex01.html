@@ -1,0 +1,44 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+        function myFuction() {
+            console.log("I'm in Head section");
+        }
+    </script>
+
+    <script type="text/javascript" src="./scripts/sample.js"></script>
+</head>
+
+<body>
+    <h1>this is template string</h1>
+    <script type="text/javascript">
+        console.log("i'm from Body Section ")
+    </script>
+
+    <button onclick="myFuction()">Call Me</button>
+    <button onclick="fn1()">Call Me-External</button>
+    <button onclick="javascript:alert('im from button')">Alert from Button</button>
+    <button onclick="varEx()">Click Me</button>
+
+    <button onclick="fnOffers()">Age Offers</button>
+    <button onclick="fnLoops()">Fn-Loops</button>
+    <button onclick="fnLoopsConfirm()">Fn-Loops-Confirm</button>
+    <button onclick="display()">Display</button>
+    <button onclick="display(10)">Display</button>
+    <button onclick="display(10, 23, 34, 56)">Display</button>
+
+    <button onclick="fnVarScope()">Fn Scope</button>
+    <button onclick="fnVarScope2()">Fn Scope2</button>
+
+
+
+
+    <noscript>Sorry JavaScript is disabled, please enable for better experience</noscript>
+</body>
+
+</html>

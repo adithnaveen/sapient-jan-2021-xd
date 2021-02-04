@@ -1,0 +1,103 @@
+Can you please share the sheet where you are tracking 5 teams with their stories update. Also please let me know if below agenda is fine for demo 1
+ 
+Please recommend which 3 teams can give demo on 9th and other 2 teams will give on 10th Feb
+ 
+Scope of the demo
+-       Static pages (HTML & CSS) - Yes 
+-       Responsive screens (Media Queries) – Mobile, Tablet & desktop - Yes 
+-       SEO & Web Accessibility features – share the features we are covering in this demo it will be good if call out, please share your thought here - Yes 
+ 
+ 
+Additional Task 
+1. Validate HTML & CSS With W3C validator site 
+2. The CSS to be minified and kept which will goto production / master branch 
+3. Light House 
+
+
+
+1. Create Branch - Jira 
+2. make changes (add, commit, push to your branch)
+3. make a pull request to master
+4. delete the branch 
+5. tag the branch (git tag <tag name>)
+
+
+
+
+MyClass.java 
+class MyClass {
+	public static void main(String args[]) {
+		var x; 
+	}
+}
+
+given to interpreter 
+
+.class 
+
+
+run time 
+Execute 
+
+
+var val= "hi"
+var val= 123
+var val= 1223.4
+var val= true
+var val= new Object; 
+var val= new Emp
+
+
+void: alert()
+string: prompt()
+boolean: confirm()
+
+
+
+
+function display() {no-arg} (x)
+
+function display(val1) {one-arg}
+
+
+<button onclick="display()"></button>
+<button onclick="display(12)"></button>
+<button onclick="display(12,12)"></button>
+<button onclick="display(12,34,56,8)"></button>
+
+
+
+
+i=100; // global 
+var j=200; // local to function 
+let k=300; // within the instance scope 
+const c = 444; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+References : 
+https://developers.google.com/web/updates/2016/12/lighthouse-dbw

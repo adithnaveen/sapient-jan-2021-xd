@@ -1,0 +1,27 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="./scripts/object.js"></script>
+
+    <script type="text/javascript">
+        function callPerson() {
+            per = new Person("Mahaveer", 101)
+            // console.log(per.name);
+            // console.log(per.pid);
+            per.display()
+            // you cannot access private directly 
+            // per.fnPrivate();
+            per.fnAccessPrivate();
+
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="callPerson()">Display Person</button>
+</body>
+
+</html>
