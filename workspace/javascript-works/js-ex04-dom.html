@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function fnGetParaContent() {
+            var tag = document.getElementsByTagName("p")[0];
+            console.log(tag);
+            console.log("Tag Name : " + tag.firstChild.nodeName);
+            console.log("Tag Value : " + tag.firstChild.nodeValue);
+        }
+
+        function fnChangeBgColor() {
+            document.body.setAttribute("bgcolor", "cyan")
+        }
+
+        function fnChangeBgColor1(color) {
+            document.body.setAttribute("bgcolor", color)
+        }
+
+        function fnGetSrc() {
+            var tag = document.getElementsByTagName("script")[0];
+            console.log(tag);
+            console.log(tag.firstChild.nodeValue);
+        }
+    </script>
+</head>
+
+<body>
+    <p>This is my para</p>
+
+    <button onclick="fnGetParaContent()">Get Para Content</button>
+    <button onclick="fnChangeBgColor()">Cyan</button>
+    <hr>
+
+    <button onmouseover="fnChangeBgColor1('blue')">Blue</button>
+    <button onmouseover="fnChangeBgColor1('orange')">orange</button>
+    <button onmouseover="fnChangeBgColor1('pink')">Pink</button>
+    <button onmouseover="fnChangeBgColor1('aqua')">Aqua</button>
+
+    <hr>
+    <button onclick="fnGetSrc()">Get Src</button>
+</body>
+
+</html>

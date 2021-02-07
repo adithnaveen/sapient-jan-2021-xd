@@ -1,0 +1,35 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+
+        function fnRegEx01() {
+            var reg = /ll/;
+            console.log("hello".match(reg));
+        }
+
+        function fnRegEx02() {
+            // 0-7 -> 0121212
+            var octal = prompt("Enter octal value");
+            var regEx = /0[0-7]+/;
+            //  console.log(octal.match(regEx));
+
+            if (octal.match(regEx) == octal) {
+                console.log("Valid Octal Number");
+            } else {
+                console.log("Invalid Value.. ");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="fnRegEx01()">Click Me</button>
+    <button onclick="fnRegEx02()">Click Me-octal</button>
+</body>
+
+</html>

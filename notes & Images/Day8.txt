@@ -75,9 +75,31 @@ const c = 444;
 
 
 
+class Employee {
+	private String name; 
+	private int empid; 
+	
+	Employee(String name, int empid) {
+		this.name = name; 
+		this.empid = empid; 
+	}
+	
+    private void changeName(String newName) {
+		this.name = newName; 
+	}
+	public void display() {
+		System.out.println("EmpName " + name);
+		System.out.println("EmpId "+ empid)
+		
+		changeName(); 
+	}
+}
 
 
+-------------------------------------------------- 
 
+Employee emp = new Employee("Harry", 101); 
+emp.changeName("New Name");  (x)
 
 
 
@@ -101,3 +123,19 @@ const c = 444;
 
 References : 
 https://developers.google.com/web/updates/2016/12/lighthouse-dbw
+
+
+https://developers.google.com/web/tools/chrome-devtools/console/log
+https://developers.google.com/web/updates/2016/12/lighthouse-dbw
+
+
+
+
+https://developer.mozilla.org/en-US/docs/Web/API/console
+
+
+
+
+
+
+

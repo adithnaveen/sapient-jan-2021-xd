@@ -1,0 +1,58 @@
+arr.splice(index)
+arr.splice(index, todelete)
+arr.splice(index, todelete, [add value])
+
+
+arr.splice(3,2, 23, 44)
+
+
+
+arr.shift- delete front 
+arr.unshift - insert front 
+
+arr.push - insert last 
+arr.pop- delete last
+
+arr.splice - splice(index, todelete, [add value])
+
+function setTimeout(handler: TimerHandler, timeout?: number, ...arguments: any[]): number
+
+
+
+DOM - Document Object Model 
+	document.getxxx()
+SAX - Simple API for XML 
+StAX - Stream API for XML 
+
+
+
+<html>
+</html>
+
+
+
+
+
+
+git clone repo.git 
+
+git branch llid
+git checkout llid 
+// write your code 
+git add . 
+git commit -m "assignment 1 submission"
+git push origin llid 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

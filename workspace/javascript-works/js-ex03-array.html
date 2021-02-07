@@ -1,0 +1,86 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+        function fnArray1() {
+            arr = new Array(5);
+
+            arr[0] = 10;
+            arr[1] = 20;
+            arr[2] = 30;
+            arr[3] = 40;
+            arr[4] = 50;
+
+            console.log("Array Length : " + arr.length);
+            console.log(arr);
+
+            for (temp in arr) {
+                console.log(arr[temp]);
+            }
+
+            arr.push(100);
+            console.log(arr);
+            arr.unshift(200);
+            console.log(arr);
+
+            arr.pop();
+            console.log(arr);
+
+            arr.shift();
+            console.log(arr);
+
+            arr.splice(2, 1)
+            console.log(arr);
+
+            arr.splice(2, 0, "Hello", "How", "Are", "You")
+            console.log(arr);
+        }
+
+
+        function fnDateWork() {
+            d = new Date();
+            // console.log(d);
+
+            hrs = d.getHours();
+            mins = d.getMinutes();
+            secs = d.getSeconds();
+
+
+            // console.log("Hours :" + d.getHours());
+            // console.log("Minutes: " + d.getMinutes());
+            // console.log("Seconds : " + d.getSeconds());
+
+            // setTimeout(function () {
+            //     console.log(hrs + ":" + mins + ":" + secs);
+            //     fnDateWork();
+            // }, 1000)
+
+            setTimeout(() => {
+                // console.log(hrs + ":" + mins + ":" + secs);
+                // document.write(hrs + ":" + mins + ":" + secs);
+                // olddata = document.getElementById("mydiv");
+                // console.log(olddata);
+                olddata = document.getElementById("mydiv");
+                console.log(olddata.innerHTML);
+                document.getElementById("mydiv").innerHTML =
+                    document.getElementById("mydiv").innerHTML + " ---- " +
+                    hrs + ":" + mins + ":" + secs;
+                fnDateWork();
+            }, 1000)
+        }
+
+    </script>
+</head>
+
+<body>
+    <button onclick="fnArray1()">Array Ex01</button>
+    <button onclick="fnDateWork()">Date Work</button>
+
+    <div id="mydiv">This is sample</div>
+</body>
+
+</html>
