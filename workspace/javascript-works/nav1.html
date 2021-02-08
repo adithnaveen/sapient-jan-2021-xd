@@ -1,0 +1,29 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+        function ask() {
+            arr = new Array("mickey.jpeg", "minie.jpeg", "talespin.jpeg");
+            var val = prompt("Enter Image Id [0-2]");
+            if (val.match(/[0-2]/) != val) {
+                alert("Wrong input")
+            } else {
+                showImage(arr[parseInt(val)])
+            }
+        }
+
+        function showImage(image) {
+            window.parent.f2.location.href = "assets/" + image;
+        }
+    </script>
+</head>
+
+<body onload="ask()">
+    <button onclick="ask()">Click ME </button>
+</body>
+
+</html>

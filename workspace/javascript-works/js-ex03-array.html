@@ -73,14 +73,39 @@
             }, 1000)
         }
 
+
+        function fnDateWork1() {
+            d = new Date();
+            // console.log(d);
+
+            hrs = d.getHours();
+            mins = d.getMinutes();
+            secs = d.getSeconds();
+            document.getElementById("mydiv1").innerHTML = hrs + ":" + mins + ":" + secs;
+
+            setTimeout('fnDateWork1()', 1000);
+        }
+
+        function fnOpenWindow() {
+            // (method) open(url?: string, target?: string, features?: string, replace?: boolean
+            var w = window.open("js-ex08-regex.html", "_blank", "toolbar=no,width=200,height=300")
+            w.moveTo(300, 150);
+            xAxis = parseInt(prompt("Enter the location to move X Axis"))
+            yAxis = parseInt(prompt("Enter the location to move y  Axis"))
+            w.resizeTo(xAxis, yAxis)
+        }
+
     </script>
 </head>
 
 <body>
     <button onclick="fnArray1()">Array Ex01</button>
     <button onclick="fnDateWork()">Date Work</button>
-
+    <button onclick="fnDateWork1()">Date Work1</button>
+    <button onclick="fnOpenWindow()">Open Window</button>
     <div id="mydiv">This is sample</div>
+    <hr>
+    <div id="mydiv1">This is sample</div>
 </body>
 
 </html>
