@@ -5,8 +5,53 @@
 5. Self Invoking Functions
 6. Object with a Constructor & Destructor
 7. Code Optimisation
-8. Modules 
+8. Exception  & Error Handling 
+
 
 Math Function- self study
 (Generating Random Number)
+
+8. Modules 
+
+
+function fngen() {
+	f1()
+	f2()
+	f3()
+}
+function f1() {}
+function f2() {}
+function f3() {}
+
+
+
+<button id="Home" onclick="fngen()">Click Me</button>
+
+
+
+
+onclick 
+ondbclick
+onmouseover
+onmouseout 
+
+
+// code 1
+try {
+	// error code 1.1 
+}catch(err){
+	// handler 
+}
+
+// code 2 
+
+
+
+
+
+
+
+
+
+
 
