@@ -1,0 +1,12 @@
+1. Event Listener 
+2. Normalize CSS / Reset CSS 
+3. Profiling fro CPU timing
+4. Logging levels
+5. Self Invoking Functions
+6. Object with a Constructor & Destructor
+7. Code Optimisation
+8. Modules 
+
+Math Function- self study
+(Generating Random Number)
+

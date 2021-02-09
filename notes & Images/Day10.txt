@@ -1,1 +1,87 @@
- 
+function Employee(name, id){
+	this.name = name; 
+	this.id = id; 
+}
+
+Employee.prototype.display = function(){....}
+
+
+e = new Employee("harry", 123); 
+
+---------------------------------------------
+
+class Employee{
+	constructor(name, id){
+		super()
+		this.name = name; 
+		this.id  =id; 
+	}
+	
+	display() {
+		console.log("name ", this.name)
+		console.log("id ", this.id)
+	}
+}
+
+
+
+
+class Employee {
+	private int empId; 
+	private String empName; 
+	
+	// setters 
+	public void setEmpId(int empId){
+		this.empId = empId; 
+	}
+	public void setEmpName(String empName) {
+		this.empName= empName; 
+	}
+	
+	// getters 
+	public int getEmpId() {
+		return this.empId; 
+	}
+	
+	public String getEmpName() {
+		return this.empName(); 
+	}
+	
+}
+
+
+Employee e= new Employee();
+e.empId = 101; (x)
+
+
+
+/\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/
+
+56
+-56
++56
+
+
+
+naveen@ps.com
+naveen@ps.in
+
+
+monika6
+ spl ="1234567890~!@#$%^&*()<>?/.,\\"; 
+    for(var i=0; i<spl.length; i++) {
+        if(uname.indexOf(spl.charAt(i))>=0) {
+            alert("sorry No Special Chars")
+            return false; 
+        }
+    }
+
+spl.length = 20 
+("monika6".indexOf(spl.charAt(5))>=0)
+
+
+
+
+
+
+

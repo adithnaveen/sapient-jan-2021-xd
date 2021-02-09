@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <button id="btn">Click Me</button>
+    <button onclick="fnCallMe()">Call Throw Check</button>
+
+    <script type="text/javascript">
+        var btnId = document.getElementById("btn");
+        btnId.addEventListener("click", function (evt) {
+            try {
+                allert("Hello Button")
+            } catch (err) {
+                console.log("The function invocation has problem", err);
+                console.log(err.message);
+            }
+        })
+
+        function fnCallMe() {
+            var val = parseInt(prompt("Enter a number"))
+            try {
+                if (val > 18) {
+                    console.log("You can vote");
+                } else {
+                    throw "err1"
+                }
+            } catch (err) {
+                console.log("Error in processing ", err);
+
+                if (err == "err1") {
+                    // console.log("Sorry you are too young to vote");
+                    console.error("Sorry you are too young to vote")
+                    // console.trace("Sorry you are too young to vote")
+                    // console.warn("sorry you are too young")
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

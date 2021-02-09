@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <video src="./assets/billy.mp4" muted id="billy" style="border: 1px solid;"></video>
+
+    <div id="mydiv">
+        <p>This is my para</p>
+    </div>
+
+</body>
+
+<script type="text/javascript">
+    var videoId = document.getElementById("billy");
+
+    // listener 
+    videoId.addEventListener("mouseenter", function (evt) {
+        evt.target.play();
+    })
+    videoId.addEventListener("mouseenter", function (evt) {
+
+        console.log("Video Is Playing... ");
+    })
+
+    videoId.addEventListener("mouseout", function (evt) {
+        evt.target.pause();
+
+    })
+
+    var pId = document.getElementById("mydiv")
+    pId.addEventListener("mouseover", function (evt) {
+        console.log(evt);
+        pId.style.backgroundColor = "cyan"
+    })
+
+    pId.addEventListener("mouseout", function (evt) {
+        pId.style.backgroundColor = "";
+    })
+
+
+</script>
+
+</html>

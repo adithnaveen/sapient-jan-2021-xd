@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script type="text/javascript" src="./script/loginval.js"></script>
+
 </head>
 
 <body>
     <h2>Login Form</h2>
 
+
+
     <form action="" onsubmit="return fnValidateForm()" name="loginForm">
-        Enter User Name <input type="text" name="uname"><br>
-        Enter Password <input type="password" name="pass"> <br>
+        Enter User Name <input type="text" id="uname" name="uname" pattern="[a-zA-Z]{6,10}"><br>
+        Enter Password <input type="password" name="pass" required> <br>
         Select User Type
         <input type="radio" value="admin" name="utype"> Admin |
         <input type="radio" value="emp" name="utype"> Employee <br>
