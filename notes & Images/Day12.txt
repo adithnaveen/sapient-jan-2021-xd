@@ -1,0 +1,66 @@
+void main() {
+	int num=10; 
+	int *p; 	
+	printf("Number is %d", num);
+
+	p = (int) malloc(30); 
+	printf("%d",&p )
+	
+	free(p); 
+}
+
+class Emp{
+	Emp(){}
+	~Emp(){}
+}
+
+java (Garbage Collection)
+class MyClass {
+	public static void main(String args[]) {
+		
+		System.out.printn(num); 
+		int num=10; 
+		
+	}
+}
+
+
+
+first.js 
+var x=100; 
+
+second.js 
+function hi() {
+	log(x)
+}
+
+sample.html 
+<head>
+	<script type="text/javascript" src="second.js"></script>	
+	<script type="text/javascript" src="first.js"></script>
+</head>
+
+
+
+
+De-structuring  assignment work (unpack)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

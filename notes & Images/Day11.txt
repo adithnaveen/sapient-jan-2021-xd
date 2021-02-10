@@ -47,6 +47,15 @@ try {
 
 
 
+References: 
+https://elad.medium.com/normalize-css-or-css-reset-9d75175c5d1e
+https://github.com/necolas/normalize.css/blob/master/normalize.css
+
+
+
+
+Team2 - Problem Statement 
+Team1 - Branching Stratergy 
 
 
 

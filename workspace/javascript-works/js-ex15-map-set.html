@@ -1,0 +1,89 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        let map = new Map();
+        map.set("Kumar", 1234);
+        map.set("present", true);
+
+        let address = { hno: 123, street: "Some Blvd", city: "Bengaluru" }
+        map.set("nagesh", address);
+
+        let newMap = new Map();
+        newMap.set("company", "PS")
+        map.set("comp", newMap);
+
+        console.log(map);
+
+        console.log(map.get("nagesh").city);
+
+
+        console.log("Number of elements : ", map.size);
+        console.log("Kumar Details: ", map.get("Kumar"));
+
+
+        // get all the keys 
+        for (let values of map.keys()) {
+            console.log(values);
+        }
+        // get all the values
+        for (let values of map.values()) {
+            console.log(values);
+        }
+
+        map.set("present", false);
+
+        map.forEach((val, key) => {
+            console.log(`Value: ${val}, Key : ${key}`);
+        })
+
+        console.log(map.has("nagesh kumar"));
+
+        console.log("----------------------------------------------------");
+
+        names = new Set();
+        names.add({ name: "Mahavir" });
+        names.add({ name: "Uttkarsh" });
+        names.add({ name: "Nikhil" });
+        names.add({ name: "Nikhil" });
+        names.add({ name: "Nikhil" });
+        names.add({ name: "Nikhil" });
+        names.add({ name: "Nikhil" });
+        names.add({ name: "Sai" });
+
+        console.log(names.size);
+
+        for (let name of names) {
+            console.log(name.name);
+        }
+
+        names.forEach((val) => {
+            console.log(`Value: ${val.name}`);
+        })
+
+
+        uniqueSet = new Set();
+        uniqueSet.add("Harry");
+        uniqueSet.add("Harry");
+        uniqueSet.add("Harry");
+        uniqueSet.add("Harry");
+        uniqueSet.add("Harry");
+        uniqueSet.add("Peter");
+        uniqueSet.add("Peter");
+        uniqueSet.add("Peter");
+        uniqueSet.add("Peter");
+
+        console.log(uniqueSet);
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

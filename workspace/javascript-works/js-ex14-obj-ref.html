@@ -1,0 +1,32 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+        var x = { a: 1, b: 2, c: 3 }
+        var y = { p: 100, q: 200, r: 300 };
+
+        console.log(x);
+        console.log("Only the keys: ", Object.keys(y));
+
+        Object.assign(y, x);
+        console.log("Only the keys: ", Object.keys(y));
+
+        // remove the property from an object 
+        delete y.p;
+        console.log("Y is ", y);
+
+        // delete x.a;
+        x = undefined;
+        console.log("X is ", x);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
