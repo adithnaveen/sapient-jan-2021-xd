@@ -1,0 +1,27 @@
+div {
+    display: block;
+    padding: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 40%;
+    position: absolute;
+    padding: 20px;
+    margin: 30px;
+    border: 1px solid black;
+    text-align: justify;
+}
+
+
+label {
+    color: firebrick;
+}
+
+span {
+    padding-left: 20px;
+}
+
+.content:nth-child(even) {
+    background-color: darkgray;
+}

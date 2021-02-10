@@ -60,6 +60,30 @@ Team1 - Branching Stratergy
 
 
 
+GET 
+PUT
+POST
+DELETE
+
+
+CRUD 
+
+
+References: 
+https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
+
+
+
+https://jsonplaceholder.typicode.com/posts
+
+
+
+
+
+
+
+
 
 
 

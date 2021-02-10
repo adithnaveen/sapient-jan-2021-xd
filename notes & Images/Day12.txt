@@ -46,6 +46,51 @@ sample.html
 De-structuring  assignment work (unpack)
 
 
+function unique(args){
+// this function has to return the arrays of unique 
+}
+
+arr = unique(['Harish', 'Harish', 'Harish', 'Harish', "Kumar"]) 
+
+
+
+function a()
+
+(function() {})()
+
+(function(val) {})(10)
+
+
+
+Full Stack 
+	Front End 
+		- HTML 
+		- CSS 
+		- JS 
+	Middle Ware (Application Logic)
+		- JAVA , NODEJS 
+		
+	Back End 
+		- SQL 
+			- ORACLE, MYSQL, DB2, DB-DERBY, POSTGRES
+		- NO SQL 
+			- MongoDB, Redis, MemCache, Cassandra 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

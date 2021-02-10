@@ -1,0 +1,91 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <script type="text/javascript">
+        window.onload = function () {
+            document.querySelector("#btnGet").onclick = function () {
+                var id = document.querySelector("#post-id").value;
+
+                if (!id) {
+                    return;
+                }
+
+                let xhr = new XMLHttpRequest();
+
+                // readyState 0 -> not initialize 
+                // readyState 1 -> initalized, request not sent 
+                // readyState 2 -> request sent 
+                // readyState 3 -> in process, response not received 
+                // readyState 4 -> response complete 
+                let url = "https://jsonplaceholder.typicode.com/posts/";
+                xhr.open("GET", url + id);
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4 && xhr.status == 200) {
+                        var resp = JSON.parse(xhr.responseText);
+                        if (!resp || resp == null) {
+                            console.log(resp);
+                        } else {
+                            byId("userid").innerHTML = resp.userId
+                            byId("id").innerHTML = resp.id
+                            byId("title").innerHTML = resp.title
+                            byId("body").innerHTML = resp.body
+                        }
+                    } else if (xhr.readyState == 4 && xhr.status == 404) {
+                        alert("sorry data not found for " + id)
+                    }
+                }
+                xhr.send();// this makes the request 
+            }
+        }
+
+        function byId(id) {
+            return document.getElementById(id);
+        }
+        function fnGetFromFetch() {
+            fetch("https://jsonplaceholder.typicode.com/posts/1")
+                .then(resp => resp.json())
+                .then(res => console.log(res))
+                .catch(erro => console.log(err))
+        }
+
+    </script>
+</head>
+
+<body>
+    <button id="fetchBtn" onclick="fnGetFromFetch()">Get From Fetch</button>
+    <h1>Ajax Demo</h1>
+
+    <input type="text" id="post-id" placeholder="Enter Post Id">
+    <button id="btnGet">Get Data</button>
+
+    <hr>
+
+    <div class="container">
+        <div class="content">
+            <label for="User Id">User Id</label>
+            <span id="userid"></span>
+        </div>
+        <div class="content">
+            <label for="ID">ID</label>
+            <span id="id"></span>
+        </div>
+        <div class="content">
+            <label for="Title">Title</label>
+            <span id="title"></span>
+        </div>
+        <div class="content">
+            <label for="Body">Body</label>
+            <span id="body"></span>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
