@@ -46,12 +46,55 @@ Closure
 
 
 
+<form></form>
+<form></form>
+
+
+
+
+function hi(val1, val2) {
+
+}
+
+
+hi(10)
 
 
 
 
 
+function fact(int n) {
+// todo 
+}
 
+
+fact()
+
+
+
+
+
+References: 
+https://medium.com/@baphemot/understanding-cors-18ad6b478e2b
+
+Promise: 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+
+Cross Browser Issues
+https://www.lambdatest.com/blog/fixing-javascript-cross-browser-compatibility-issues/
+
+Common JS Problems 
+https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/JavaScript
+
+Strict Mode
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
+
+
+1. Merge the project Code to Master 
+2. Update the document 
+3. install nodejs 
+4. https://tenon.io
+5. https://wave.webaim.org/
 
 
 
