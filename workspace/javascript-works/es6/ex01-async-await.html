@@ -1,0 +1,71 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        /*
+        function divide(n1, n2, callback) {
+            if (typeof callback != 'function') {
+                throw "Please pass callback & should be function"
+            }
+            setTimeout(() => {
+                if (typeof n1 != 'number') {
+                    callback("Please pass only number for arg 1");
+                    return;
+                }
+                if (typeof n2 != 'number') {
+                    callback("Please pass only Number for arg 2")
+                    return;
+                }
+                if (n2 === 0) {
+                    callback("Sorry dont divide by zero")
+                    return
+                }
+                callback(null, n1 / n2);
+            }, 1000);
+        }
+*/
+
+
+
+        function divide(n1, n2) {
+            return new Promise((resolve, reject) => {
+                if (typeof n1 != 'number') {
+                    reject("Please pass only number for arg 1");
+                }
+                if (typeof n2 != 'number') {
+                    reject("Please pass only Number for arg 2")
+                }
+                if (n2 === 0) {
+                    reject("Sorry dont divide by zero")
+                }
+                resolve(n1 / n2)
+            })
+        }
+
+        console.log("Start of Script ");
+        let a = 10;
+        let b = 20;
+
+        setTimeout(async () => {
+            try {
+                let result = await divide(a, b);
+                console.log("Result of Division : ", result);
+            } catch (err) {
+                console.log("Error Occured While Processing : ", err)
+            }
+        }, 0);
+        console.log("End of Script ");
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

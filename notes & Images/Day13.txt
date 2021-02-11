@@ -1,0 +1,67 @@
+.gitignore 
+
+
+
+> git init 
+> touch hi.txt 
+> git add . 
+> git commit -m "added files"
+> git push origin master  
+> mkdir assets 
+	.jpeg, .mp4, .png 
+> touch .gitignore 
+
+> git add . 
+> git commit -m "added files"
+> git push origin master  
+
+
+
+Ajax - GET , POST 
+Fetch - GET, POST, PUT, DELET 
+
+fetch(URL)
+	.then(resolve)
+	.then(resolve)
+	.then(resolve)
+	.then(resolve)
+	.then(resolve)			
+	.catch(err => {})
+
+async, await 
+CORS Policy 
+
+1995-96 (IE[aciveX Control, dll] / Netscape (API))
+
+Closure 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
