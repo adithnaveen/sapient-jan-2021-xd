@@ -75,7 +75,7 @@ https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
 
 
 
-https://jsonplaceholder.typicode.com/posts
+https://jsonplaceholder.typicode.com/posts/1
 
 
 
