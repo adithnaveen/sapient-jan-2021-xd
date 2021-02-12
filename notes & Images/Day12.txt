@@ -69,7 +69,6 @@ Full Stack
 		- JS 
 	Middle Ware (Application Logic)
 		- JAVA , NODEJS 
-		
 	Back End 
 		- SQL 
 			- ORACLE, MYSQL, DB2, DB-DERBY, POSTGRES
@@ -80,7 +79,17 @@ Full Stack
 
 
 
-
+class HelloWorld {
+	public void doGet(HpptServletRequest req, HttpServletResponse res) {
+		out.println("<html>"); 
+		out.println("<body>"); 		
+		out.println("<form>"); 	
+				//// 
+		out.println("</form>"); 					
+		out.println("</body>"); 		
+		out.println("</html>"); 		
+	}
+}
 
 
 

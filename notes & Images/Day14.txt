@@ -1,0 +1,80 @@
+ES6 
+var let const 
+destructing 
+
+
+function 
+	-- oops 
+	
+
+jsfiddle 
+
+
+NodeJS
+	NodeJS + NPM 
+
+names=new Set(); 
+HTTP Verbs 
+Await - Async 
+setTimeOut()
+
+program to keep only unique values 
+
+
+
+first.js 
+	export c1, export c2, export default c3
+second.js
+	c3,c4
+third.js 
+	c5
+
+
+
+app.js 
+	import {c1 as myc1, c2} from 'first'
+
+	c3() 
+
+
+> npm init 
+> npm init -y 
+
+
+
+x=10; -> window (global )
+var xx = 100; 
+
+es6 - at block level 
+let xxx=200; 
+const cx=400; 
+
+{
+	let val = 100; 
+}
+
+consoloe.log(val);
+
+
+for(var x = 10; x<y; x++) {
+}
+
+console.log(x) (still works if it is var )
+
+
+es6 
+const - default 
+let - mutation 
+var - lets not use 
+
+
+
+
+
+
+
+
+
+
+
+
