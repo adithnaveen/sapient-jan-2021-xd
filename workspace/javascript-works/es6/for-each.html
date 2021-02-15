@@ -1,0 +1,33 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div id="mydiv">
+
+    </div>
+    <script>
+
+        let persons = [{
+            name: "Ganesh",
+            city: "Hyd"
+        }, { name: "Shalini", city: "Bengaluru" }, { name: "Manasvi", city: "Mangaluru" }];
+        let data = "<p>";
+
+        persons.map(p => {
+            console.log(p);
+            data = data + `${p.name}, ${p.city} <hr>`;
+        })
+
+        document.getElementById("mydiv").innerHTML = data;
+
+    </script>
+</body>
+
+</html>

@@ -66,17 +66,3 @@ console.log(employee2);
 let employee3 ={designation:"software engg", project:"Development"}; 
 let employee1 = {...employee}
 console.log(employee3===employee1);
-
-
-
-
-
-
-
-
-
-
-
-
-
-

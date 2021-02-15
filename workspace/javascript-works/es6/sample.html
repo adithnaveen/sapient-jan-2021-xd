@@ -9,8 +9,39 @@
 </head>
 
 <body>
+    <h1>this is sample1</h1>
+    <h1>this is sample2</h1>
+    <h1>this is sample3</h1>
+    <h1>this is sample4</h1>
+    <h1>this is sample5</h1>
+
+    <script type="text/javascript">
+        // version 1 
+        const headers = document.querySelectorAll("h1")
+        // const headerArray = Array.from(headers);
+        // const headerArray = [...headers];
+        // const titles = headerArray.map(h1 => console.log(h1));
+
+        // version 2 
+        // const titles = Array.from(headers, h1 => {
+        //     return h1.textContent;
+        // })
+        // console.log(titles);
+
+        // version 3 
+        // const titles = Array.from(document.querySelectorAll("h1"),
+        //     h1 => { return h1.textContent; })
+        // console.log(titles);
+
+        // version 4 
+        const titles = Array.from(headers, header => header.textContent)
+        console.log(titles);
+    </script>
+
+
+
+
 </body>
 
-</script>
 
 </html>

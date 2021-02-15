@@ -1,0 +1,75 @@
+function add(a, b) {
+	return  a+b; 
+}
+
+add(10,20)
+
+const add = (a,b) => a+ b; 
+add(10,20)
+
+
+posts =[
+	{post:1}, {post:2},{post:3}
+]
+
+for(let post of posts) {
+	if(post.post===2) {
+		log("Found")
+	}
+}
+
+posts.find(post => post===2)
+
+
+
+
+
+
+
+class MyClass {
+	constructor(name){
+	this.name = name; 
+	}
+	// method stack 
+	sayHi() {
+		// variable section 
+		let x = 10; 
+	}
+	// static stack 
+	static sayHello() {
+	}
+}
+
+m -> in heap memory (expandable & shrinkable)
+MyClass m= new MyClass(); 
+MyClass m1= new MyClass(); 
+
+
+
+
+
+function myFunction() {
+	let val =10; 
+	function simple() {
+		return val * 2;
+	}
+	
+	return simple(); 
+}
+
+
+tms.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+

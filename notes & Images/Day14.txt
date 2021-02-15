@@ -67,13 +67,30 @@ const - default
 let - mutation 
 var - lets not use 
 
+arr2 = [...arr1]; 
+arr1.push("hi")
 
 
 
+{
+  designation: 'software engg',
+  project: 'Development',
+  person: {
+    first: 'Somen',
+    last: 'Kumar',
+    location: { city: 'Bengaluru', state: 'Karnataka' }
+  }
+}
+-------------------
 
 
-
-
+{
+  designation: 'software engg',
+  project: 'Development',
+  first: 'Somen',
+  last: 'Kumar',
+  location: { city: 'Bengaluru', state: 'Karnataka' }
+}
 
 
 

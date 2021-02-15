@@ -1,0 +1,18 @@
+[
+    {
+        "country": "india",
+        "state": [
+            "Karnataka",
+            "Delhi",
+            "Tamil Nadu"
+        ]
+    },
+    {
+        "country": "USA",
+        "state": [
+            "Washington",
+            "Virginia",
+            "NewYork"
+        ]
+    }
+]

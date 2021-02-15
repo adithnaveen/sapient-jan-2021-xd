@@ -19,6 +19,7 @@
 
 // version 3.0 
 function calcualateSalary(salary, tax=0, incentives=0) {
+    
      return salary + tax + incentives; 
  }
 

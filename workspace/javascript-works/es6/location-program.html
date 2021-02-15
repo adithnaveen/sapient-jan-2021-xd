@@ -1,0 +1,42 @@
+<html lang="en">
+<!-- this is for testing not to use-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        fetch("http://location.com/countries")
+            .then(data => data.json())
+            .then(jsonresponse => {
+                country = document.getElementById("country");
+                country.option.innerHTML = jsonresponse;
+            })
+            .catch(err => console.log("Error ", err))
+
+
+        document.getElementById("country").onchange = () => {
+            fetch("http://location.com/countries/1")
+                .then(data => data.json())
+                .then(jresp => {
+                    let states = jresp.state;
+                    statesPlaceHolder = document.getElementById("states")
+                    statesPlaceHolder.option.innerHTML = states;
+                })
+        }
+    </script>
+</head>
+
+<body>
+    <select id="country" onchange="getStates()">
+
+    </select>
+
+    <select id="states">
+
+    </select>
+</body>
+
+</html>
