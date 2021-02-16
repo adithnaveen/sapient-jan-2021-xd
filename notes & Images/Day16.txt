@@ -1,0 +1,101 @@
+Design Pattern 
+	1995-1996 
+
+Elements of Reusable Object-Oriented Software 
+
+
+1 Creational
+	1.1 Constructor Design Pattern 
+	1.2 Singleton 
+	1.3 Factory 
+	1.4 Abstract Factory Pattern 
+2 Structural
+	2.1 Module Pattern 
+	2.2 Mixins Pattern 
+	2.3 Facade Pattern 
+	2.4 Flyweight Pattern 
+	2.5 MVC Pattern 
+	2.6 MVP Pattern
+	2.7 MV VM Pattern 
+3 Behavioral
+	3.1 Observer Pattern 
+	3.2 Chain Of Responsibility Pattern (.then().then().then().catch())
+	3.3 Iterator Pattern 
+	
+	
+	
+
+class SUV {}
+class MUV {}
+class Sedan {}
+class HatchBack {}
+
+////////Factory/////////////////
+
+s = Factory.getTheCar("suv")
+m = Factory.getTheCar("muv")
+ss = Factory.getTheCar("sedan")
+hb = Factory.getTheCar("hatchback")
+
+
+
+
+
+
+
+
+
+
+const makeSound() =>  {
+	some business logic 
+}
+
+class Car {}
+
+class SUV extends Car {}
+class HatchBack extends Car {}
+class Sedan extends Car {} 
+
+class X1 extends SUV {}
+class Pajero extends SUV {}
+.... 100 + cars 
+
+class Figo extends HatchBack {}
+class I20 extends HatchBack {}
+.... 100 + cars 
+
+class CarFactory () {
+}
+
+carFactory = new CarFacory(); 
+figo = carFactory.getInstance("figo"); 
+
+
+
+
+
+
+
+ 
+stateless(function) applications don't “store” data whereas stateful(class) applications require backing storage.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

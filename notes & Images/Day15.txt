@@ -21,10 +21,7 @@ for(let post of posts) {
 posts.find(post => post===2)
 
 
-
-
-
-
+ 
 
 class MyClass {
 	constructor(name){
@@ -56,20 +53,6 @@ function myFunction() {
 	
 	return simple(); 
 }
-
-
-tms.com
-
-
-
-
-
-
-
-
-
-
-
 
 
 
