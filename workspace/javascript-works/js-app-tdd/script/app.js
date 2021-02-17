@@ -1,4 +1,4 @@
-const {  validateInput } = require('./util');
+const {  validateInput, generateText, createElement } = require('./util');
 const initApp =() => {
     // registring the button 
     const newUserBtn = document.querySelector("#btnAddUser"); 
@@ -6,19 +6,22 @@ const initApp =() => {
 }
 
 const addUser = () =>{
-    
     const newUserName = document.querySelector("input#name")
     const newUserAge = document.querySelector("input#age")
 
-    if(
-        !validateInput(newUserName.value, true, false) || 
+    if( !validateInput(newUserName.value, true, false) || 
         !validateInput(newUserAge.value, false, true)) {
             return ; 
         }
-        console.log("User Name : ", newUserName.value);
-        console.log("User Age : ", newUserAge.value);
-     
+       
+        const userList = document.querySelector(".user-list")
+        const outputText = generateText(newUserName.value, newUserAge.value)
         
+        const element = createElement('li', outputText, 'user-item')
+        userList.appendChild(element)
+
+        document.querySelector("input#name").value = ''; 
+        document.querySelector("input#age").value = ''; 
 }
 
 initApp(); 
