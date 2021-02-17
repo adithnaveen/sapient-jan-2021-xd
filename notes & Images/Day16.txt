@@ -81,6 +81,49 @@ stateless(function) applications don't “store” data whereas stateful(class) 
 
 
 
+19-Feb-2021 - Intrim Demo 
+23-Feb-2021 Assessment 
+24-Feb-2021 Demo 
+(is it split in to 2 days)
+
+
+Client 
+Login Screen 
+	- get from end point -> Open client-homt.html
+	
+Register Screen 
+	- post data to end point & Given Ack 
+
+Remove 
+-------------
+Edit Role, Password 
+User Edit 
+
+ 
+
+
+
+
+Client 
+Login Screen 
+	- get from end point -> Open client-homt.html
+	
+Register Screen 
+	- post data to end point & Given Ack 
+
+
+POST /users/signup - admin 
+POST /users/login 
+POST /users
+
+
+
+
+
+
+
+
+
 
 
 

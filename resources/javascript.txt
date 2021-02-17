@@ -1,0 +1,152 @@
+index.html 
+------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>JS Testing</title>
+</head>
+
+<body>
+    <section class="control-panel">
+        <div class="input-container">
+            <label for="name">Name</label>
+            <input type="text" id="name">
+        </div>
+        <div class="input-container">
+            <label for="age">Age</label>
+            <input type="number" id="age">
+        </div>
+        <button id="btnAddUser" class="button">Add User</button>
+    </section>
+    <hr>
+    <section class="user-output">
+        <ul class="user-list"></ul>
+    </section>
+    <script src="dist/main.js"></script>
+</body>
+
+</html>
+
+
+
+------------------------------------------------------------------------------
+
+app.js
+------------------------------------------------------------------------------
+const { generateText, createElement, validateInput } = require('./util');
+
+const initApp = () => {
+  // Initializes the app, registers the button click listener
+  const newUserButton = document.querySelector('#btnAddUser');
+  newUserButton.addEventListener('click', addUser);
+};
+
+const addUser = () => {
+  // Fetches the user input, creates a new HTML element based on it
+  // and appends the element to the DOM
+  const newUserNameInput = document.querySelector('input#name');
+  const newUserAgeInput = document.querySelector('input#age');
+
+  if (
+    !validateInput(newUserNameInput.value, true, false) ||
+    !validateInput(newUserAgeInput.value, false, true)
+  ) {
+    return;
+  }
+
+  const userList = document.querySelector('.user-list');
+  const outputText = generateText(
+    newUserNameInput.value,
+    newUserAgeInput.value
+  );
+  const element = createElement('li', outputText, 'user-item');
+  userList.appendChild(element);
+};
+
+// Start the app!
+initApp();
+------------------------------------------------------------------------------
+util.js 
+------------------------------------------------------------------------------
+exports.generateText = (name, age) => {
+  // Returns output text
+  return `${name} (${age} years old)`;
+};
+
+exports.createElement = (type, text, className) => {
+  // Creates a new HTML element and returns it
+  const newElement = document.createElement(type);
+  newElement.classList.add(className);
+  newElement.textContent = text;
+  return newElement;
+};
+
+exports.validateInput = (text, notEmpty, isNumber) => {
+  // Validate user input with two pre-defined rules
+  if (!text) {
+    return false;
+  }
+  if (notEmpty && text.trim().length === 0) {
+    return false;
+  }
+  if (isNumber && +text === NaN) {
+    return false;
+  }
+  return true;
+};
+------------------------------------------------------------------------------
+style.css
+------------------------------------------------------------------------------
+body {
+  font-family: sans-serif;
+}
+
+.control-panel {
+  width: 25rem;
+}
+
+.input-container {
+  margin: 1rem;
+}
+
+.input-container label,
+.input-container input {
+  display: block;
+  width: 100%;
+}
+
+.input-container input {
+  font: inherit;
+}
+
+.button {
+  font: inherit;
+  background: #521751;
+  color: white;
+  border: 1px solid #521751;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  margin: 0 1rem;
+}
+
+.user-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 1rem;
+  padding: 0;
+}
+
+.user-item {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  width: 20rem;
+}
+------------------------------------------------------------------------------
