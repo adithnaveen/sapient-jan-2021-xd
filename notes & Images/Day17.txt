@@ -50,7 +50,7 @@ mocha
   });
 
 
-E2E - Selenium , saucelab, browserstack, ranorex 
+E2E - Selenium , saucelab, browserstack,ranorex 
 protractor 
 ----------------------------------------------- 
 
@@ -59,13 +59,46 @@ describe('angularjs homepage todo list', function() {
     browser.get('https://angularjs.org');
   } 
 } 
+ 
+ 
+1. Incorporate Changes from last sprint / Suggestions 
+Team 1: Y
+Team 2: Y
+Team 3: Y
+Team 4: ~
+Team 5: ~
+
+2. Do we have master ready 
+Team 1: Y
+Team 2: N
+Team 3: Y
+Team 4: ~
+Team 5: N
+
+Function Style (Fetch) / Class Style 
 
 
-Puppeteer 
+
+2 User Stories - Fetch the data from end point (remote end point)
+3 User Stories - local storage - mock (local end point)
 
 
+4. Proper Folder structures 
 
 
+{
+  "fullname": "Naveen",
+  "email": "naveen@probits.in",
+  "password": "secret1234", 
+  "pic": "/somelocation"
+}
+
+201 - created 
+
+{
+  "message": "User signup successfully",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDJjZTIzYjA0ZDNjMzAwMTdhMWI2YjQiLCJpYXQiOjE2MTM1NTQyMzUsImV4cCI6MTYxMzU5NzQzNX0.QIXfLcFgyhs3vV6VOIzqbtFHR0aNEyQIDQlgttg3Yag"
+}
 
 
 
@@ -99,3 +132,5 @@ https://www.keycdn.com/blog/frontend-optimization
 
 Jest Reference 
 https://jestjs.io/docs/en/using-matchers#and-more
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
