@@ -1,5 +1,5 @@
 
-const {generateText}  = require('../script/util')
+const {generateText, checkAndGenerate}  = require('../script/util')
 
 
 test('should output given name and age in proper format', () => {
@@ -14,4 +14,11 @@ test('should fail post passing  invalid values', () => {
     const text = generateText('', null); 
     expect(text).toBe(' (null years old)')
 })
+
+//integration testing 
+test('should generate a validat text output', () => {
+    const text = checkAndGenerate("Astha", 22); 
+    expect(text).toBe(`Astha (22 years old)`)
+})
+
 
