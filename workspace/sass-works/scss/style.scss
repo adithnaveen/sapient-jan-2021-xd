@@ -1,0 +1,21 @@
+@import 'config'; 
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: $font-stack; 
+    background-color: $primary-color; 
+    line-height: 1.6;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
