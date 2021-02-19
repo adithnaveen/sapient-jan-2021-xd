@@ -1,0 +1,66 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+        console.log(document.cookie);
+        document.cookie = "name=Harry"
+        console.log(document.cookie);
+
+        let name = "username"
+        let value = "Harry Poter"
+
+        document.cookie = encodeURIComponent(name) + "=" + encodeURIComponent(value)
+
+        console.log(document.cookie);
+
+        date = new Date();
+        date.setHours(15, 0, 0, 0)
+        console.log(date);
+
+        document.cookie = encodeURIComponent(name) + "="
+            + encodeURIComponent(value) + ";expires=" + date + ";domain=yahoo.com;path=/somepath;secure";
+        console.log(document.cookie);
+
+
+        localStorage.setItem("users", "kumar,hareesh,ujjwal")
+        localStorage.setItem("emps", "chitraksh,sahil,monika")
+        localStorage.setItem("customers", "swati,nikhil,venkat")
+        let myUsers = localStorage.getItem("users");
+        console.log("Users ", myUsers);
+
+        for (let key in localStorage) {
+            // console.log(key);
+            if (!localStorage.hasOwnProperty(key)) {
+                continue;
+            }
+            console.log(`${key} : ${localStorage.getItem(key)}`);
+        }
+
+        console.log("-----------------------------");
+
+        let myobj = { post: 1 }
+        sessionStorage.setItem("users1", JSON.stringify(myobj));
+        console.log(sessionStorage.getItem("users1"));
+
+        // you have to store the value in the form of string only 
+
+        let user = { post: "My First Post" }
+        localStorage.user = user;
+        console.log(localStorage.user);
+        localStorage.user = JSON.stringify(user);
+        let retUser = JSON.parse(localStorage.user)
+        console.log("After Getting from Local Storage ", retUser);
+
+    </script>
+</head>
+
+<body>
+    <a href="./delete.html">Call Me </a>
+</body>
+
+</html>
