@@ -1,0 +1,104 @@
+CSS 
+
+
+LESS - http://lesscss.org
+SASS / SCSS - 
+to install - https://sass-lang.com/install
+			 https://sass-lang.com/libsass#go
+
+div {
+	font-family:arial ; 
+	p {
+		text-align:left; 
+	}
+} 
+
+.m1 {}
+.m2 {}
+.m3 {}
+
+
+
+div>div {
+	margin:40px ; 
+}
+div>div>p {
+	margin: 50px; 
+}
+
+
+emp {
+	firstName:"Harry", 
+	lastName:"Peter", 
+	address: {
+		hno:123, 
+		street:"Stevens Creek Blvd"
+	}
+}
+
+
+yaml 
+emp  
+	firstName:"Harry"  
+	lastName:"Peter" 
+	address: 
+		hno:123 
+		street:"Stevens Creek Blvd"
+	
+}
+
+
+nav  {
+	&>ul {
+	
+	}
+}
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0 !immediate;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+----------------------------css--------------------------------
+nav ul {
+  margin: 0;
+  padding: 0 !immediate;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+
+
+Google - Angular - CSS Enginee -> LESS/SASS/SCSS - Angular Material 
+Facebook - React - CSS Enginee -> LESS/SASS/SCSS - Material UI 
+Twitter - CSS Enginee -> LESS/SASS/SCSS - Bootstrap 
+
+ 
+References: 
+SASS (Slide)
+https://www.slideshare.net/jonathandean/introduction-to-sass
+
+
+
+submitting forms 
+https://jsbin.com/saduresago/edit?html,output
+
+
+

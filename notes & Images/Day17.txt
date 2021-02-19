@@ -103,6 +103,22 @@ Function Style (Fetch) / Class Style
 
 
 
+http://mysite.com 
+
+<form action="someaction">
+	<input type="text" name="name" /> 
+	<input type="password" name="pass" /> 
+	<input type="submit" /> 
+</form>
+
+http://mysite.com/someaction?name=aaishiq&password=hello
+
+
+
+
+
+
+
 
 
 

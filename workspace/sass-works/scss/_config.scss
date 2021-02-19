@@ -1,3 +1,36 @@
 $font-stack : Arial, Helvetica, sans-serif;
 $primary-color :  #0e6cff; ; 
+$secondary-color: #e76910; 
+$font-color: #000;
 
+
+// you can write functions in SASS 
+
+@function set-text-color($color) {
+   @if (lightness($color) >70) {
+       @return #121212;  
+   }@else {
+        @return #fff ; 
+   }
+}
+
+ 
+@mixin set-background ($color) {
+    background-color:$color; 
+    color:set-text-color($color)
+}
+
+// you can have array 
+$space-amounts:(1,2,3,4,5); 
+
+
+@each $space in $space-amounts {
+    .my-#{$space} {
+        margin: #{$space}rem ; 
+    }
+
+    .p-#{$space} {
+        margin: #{$space}rem 0; 
+    }
+    
+}

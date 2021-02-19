@@ -1,0 +1,16 @@
+row > col 
+.col-md-8				|		.col-6 .col-md-4
+
+
+when the device is medium - laptop 
+left - .col-md-8    | right - .col-md-4
+
+when you load other devices apart from medium 
+left - 6 			| right - .col-6
+
+
+
+
+
+https://getbootstrap.com/docs/5.0/utilities/spacing/
+

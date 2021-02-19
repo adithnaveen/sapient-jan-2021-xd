@@ -1,4 +1,7 @@
 @import 'config'; 
+@import 'utilities'; 
+@import 'buttons';
+
 
 * {
     box-sizing: border-box;
@@ -19,3 +22,55 @@ a {
     text-decoration: none;
 }
 
+.showcase {
+    background-color: $primary-color;
+    height: 600px;
+    color: $font-color; 
+ 
+    nav {
+        display: flex; // align horizontally 
+        align-items: center;
+        justify-content: space-around;
+
+        ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        li {
+            padding: 15px;
+        }
+        a:hover {
+            color: $secondary-color;
+        }
+    }
+
+    a {
+        color: set-text-color(lighten($secondary-color, 20%));
+    }
+
+    
+    // .showcase-content { or below style 
+    &-content {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+
+        h1 {
+            font-size: 50px;
+            line-height: 1.2;
+        }
+        img {
+            width: 50%;
+        }
+
+        p {
+            margin: 20px 0;
+        }
+    }
+}
+
+
+@import 'mobile'; 
