@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery Event Handling</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <script src="../externals/jquery.js"></script>
+
+    <script type="text/javascript">
+        $("document").ready(() => {
+            $("#example").on("mousemove", onMouseOver);
+            $("#example").on("mouseleave", onMouseLeave)
+            $("#example").on("click", onMouseClick)
+        })
+
+        function onMouseOver(evt) {
+            $("#example").text(evt.type + ":" + evt.pageX + ":" + evt.pageY)
+
+        }
+        function onMouseLeave(evt) {
+            $("#example").text("Mouse Leave... ");
+
+        }
+        function onMouseClick(evt) {
+            $("#example").text(evt.type + ":" + evt.pageX + ":" + evt.pageY)
+        }
+    </script>
+
+</head>
+
+<body>
+    <h1>jQuery Event Handling</h1>
+    <div id="content">
+
+        <p>jQuery normalizes an event structure across browsers and provides cross-browser consistency for properties
+            such as
+            the event name, the page coordinates of the mouse, the element where the event originated along with any
+            other
+            element related to the event, and information such as whether a meta-key or specific mouse button was
+            pressed.</p>
+        <div id="example">
+        </div>
+    </div>
+</body>
+
+</html>

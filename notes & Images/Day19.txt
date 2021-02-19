@@ -14,3 +14,40 @@ left - 6 			| right - .col-6
 
 https://getbootstrap.com/docs/5.0/utilities/spacing/
 
+
+
+
+FrameWork 
+	Angular
+		Dev Env - 
+		Test Env - Jest (x) 
+		Hit End Point - 
+	Vue 
+	
+Library 
+	ReactJs - Jasmine, NestJs, BackbonoeJs 
+	- API 
+		- Dev Tools 
+		- fetch, Axios 
+
+1. jQuery 
+	- DOM Manipulation 
+	- Animations 
+	- EndPoint - Ajax 
+	- Event handling
+
+2. ReactJS 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
