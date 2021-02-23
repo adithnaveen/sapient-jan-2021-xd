@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery and AJAX</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <script src="../externals/jquery.js"></script>
+
+    <script type="text/javascript">
+
+        $("document").ready(() => {
+            $("#getcontent").click(fnGetContent)
+        })
+
+        function fnGetContent() {
+            $.ajax("https://jsonplaceholder.typicode.com/posts/", {
+                success: fnSetContent,
+                type: "GET",
+                dataType: "json"
+            })
+        }
+
+        function fnGetPostContent(val) {
+            $.ajax("https://jsonplaceholder.typicode.com/posts/" + val, {
+                success: fnSetSingleContent,
+                type: "GET",
+                dataType: "json"
+            })
+        }
+
+        function fnSetSingleContent(data, status) {
+            console.log(data);
+            let str = "<tr><td>" + data.userId + "</td><td>" + data.title + "</td></tr>"
+            $("#single-post").append(str);
+        }
+
+
+        function fnSetContent(data, status) {
+            console.log(status);
+            $.each(data, (idx, value) => {
+                $("#tbl-posts").append("<tr><td><button onclick='fnGetPostContent(" + value.id
+                    + ")' id='singlepost" + value.id + "'>click</button>" + value.id + "</td><td>"
+                    + value.title + "</td></tr>")
+            })
+        }
+    </script>
+
+</head>
+
+<body>
+    <h1>AJAX and jQuery</h1>
+
+    <button id="getcontent">Get Content</button>
+
+    <div id="content">
+
+        <table id="tbl-posts" class="fl-table">
+            <tbody>
+            </tbody>
+        </table>
+
+    </div>
+
+    <div id="single-post"></div>
+
+</body>
+
+</html>

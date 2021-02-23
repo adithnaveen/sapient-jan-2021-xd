@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Using jQuery Animations</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <script src="../externals/jquery.js"></script>
+
+    <style>
+        #testDiv {
+            position: relative;
+            width: 150px;
+            height: 100px;
+            margin: 10px;
+            padding: 20px;
+            background: #b3c8d0;
+            border: 1px solid black;
+            font-size: 16pt;
+            cursor: pointer;
+        }
+    </style>
+
+    <script type="text/javascript">
+        $("document").ready(function () {
+            $("#go").click(function () {
+                $("#testDiv")
+                    .animate({ width: 400 }, 300)
+                    .animate({ width: 300 }, 400)
+                    .animate({ width: 200 }, 500)
+                    .animate({ top: "+100", borderwidth: 10 }, "slow", function () {
+                        // $("#testDiv").hide();
+                        $("#testDiv")
+                            .animate({ width: 100 }, 300)
+                            .animate({ width: 50 }, 400)
+                            .animate({ width: 20 }, 500)
+
+                    })
+            })
+        })
+    </script>
+
+</head>
+
+<body>
+    <h1>Quick jQuery Animation Intro</h1>
+    <div id="content">
+        <p>jQuery provides some basic animation features for showing and hiding elements, as well as a low-level
+            animation function
+            that can be used to animate several CSS properties (as long as they are numeric).</p>
+        <button id="go">Start Animation</button>
+        <div id="testDiv"></div>
+    </div>
+</body>
+
+</html>

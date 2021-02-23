@@ -35,6 +35,9 @@ Library
 	- Animations 
 	- EndPoint - Ajax 
 	- Event handling
+	- https://code.jquery.com/jquery-3.5.1.js 
+	- 
+
 
 2. ReactJS 
 
