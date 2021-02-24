@@ -1,0 +1,219 @@
+login.js 
+-----------------------------------
+
+fetch("http://somesite.somemainsite.com/1")
+	.then(resp => resp.json()) 
+	.then(data => {dom manipulation happens})
+	.catch(err => log(err))
+	
+	
+constants.js 
+------------------------------------------------
+const URL = "http://somesite.somemainsite.com/"; 
+const companyName ="PS"; 
+
+
+
+login.js 
+------------------------------------------------
+import {URL} from './constants'
+
+function fnGetUser(id) {
+	fetch(URL +id)
+		.then(resp => resp.json()) 
+		.then(data => {return data;})
+		.catch(err => log(err))
+}
+
+
+function fnDeleteUser(id) {
+	fetch(URL +id)
+		.then(resp => resp.json()) 
+		.then(data => {return data;})
+		.catch(err => log(err))
+}
+
+
+
+
+DOM 
+BOM 
+
+
+
+window
+window.document
+
+history 
+pushstate and popstate 
+
+TypeScript 
+
+
+let x = 10; 
+
+function myfunction(x) {
+	console.log("the length of x is : ", x.length)
+}
+
+
+myfunction(true); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+myfunction(true); 
+myfunction(10); 
+
+
+
+contracts 
+interface Animal{
+	talk(); 
+	walk();
+	eat(); 
+} 
+
+class Human implements Animal {
+	talk(); 
+	walk();
+	eat();
+}
+
+class myclass {
+	void display()=0; 
+}; 
+
+class yourclass:myclass {
+	// should have the implementation of display() 
+}
+
+
+class {} 
+
+
+interpreters 
+
+const user = {
+  firstName: "Angela",
+  lastName: "Davis",
+  role: "Professor"
+}
+
+console.log(user.name)
+
+---------------------------------------
+
+execution 
+
+const user = {
+  firstName: "Angela",
+  lastName: "Davis",
+  role: "Professor"
+}
+
+console.log(user.name)
+
+
+
+
+
+function talk(value:string) : string {
+    console.log("value got is ", value)
+    console.log("Length is : ", value.length)
+    return value; 
+}
+
+
+String talk(String value) {
+
+}
+
+
+
+
+function surprise(name:string) {
+	console.log("Hey ", name, "You have a surprise")
+}
+
+surprise("Nikhil")
+surprise(23)
+
+
+
+OOPs
+
+Encapsulation - Blue Print  - Access Specifers (private, public, protected, default), Accessmodiers - static 
+
+class MyClass {
+	private myvar:string; 
+}
+
+Inheritance - is-a (Object - Animal - Human- Employee - Manager), has-a ()
+
+
+class MyClass {}
+class YourClass extends MyClass {}
+
+class SomeClass {
+	myvar : MyClass; 
+}
+
+Polymorphism - 
+class Number {} 
+class Integer extends Number{}
+class Float extends Number{}
+class Double extends Number{} 
+ 
+
+Number n = new Integer(); 
+n = new Float(); 
+
+
+
+
+Abstraction - 
+
+abstract class - it inherits the behvious of Class 
+	if you have a method and not implemented then child has to do 100% 
+	concrete
+		hi() {}
+	abstract 
+		hi() ; 
+Interface - has nothing to do with class 
+	if you have a method and not implemented then child has to do 100% 
+	abstract 
+		hi() ; 
+	100 % abstract 
+
+interface ITodoService {
+	add(myvar:Todo): Todo; 
+}
+
+class MyTodo implements ITodoService {
+	add(myvar:Todo): Todo{
+	
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

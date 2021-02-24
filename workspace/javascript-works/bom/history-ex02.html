@@ -1,0 +1,38 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+        function fnGoBack() {
+            window.history.back()
+        }
+        function fnGo() {
+            window.history.go(0)
+        }
+        function fnGoBack1() {
+            window.history.go(-1)
+        }
+        function fnGoBack2() {
+            window.history.go(-2)
+        }
+        function fnPushState() {
+            history.pushState({ name: "Kumar" }, "First Title", "?user1")
+        }
+        console.log("Number of levels ", history.length);
+    </script>
+</head>
+
+<body>
+    <h1>you can click to go back</h1>
+    <button onclick="fnGoBack()">Go Back With Back </button>
+    <button onclick="fnGo()">To Refresh </button>
+    <button onclick="fnGoBack1()">Go Back With Go-1 </button>
+    <button onclick="fnGoBack2()">Go Back With Go-2 </button>
+    <button onclick="fnPushState()">Push State</button>
+</body>
+
+</html>

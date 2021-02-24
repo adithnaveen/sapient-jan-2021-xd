@@ -1,0 +1,39 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function fnGoForward() {
+            window.history.forward();
+        }
+    </script>
+</head>
+
+<body>
+    <h1>this is to check mime type</h1>
+    <a href="./history-ex02.html">Goto History File </a>
+    <button onclick="fnGoForward()">Go Forward</button>
+    <script type="text/javascript">
+        let browserCodeName = navigator.appCodeName;
+        let browserName = navigator.appName;
+        let platform = navigator.platform;
+        let useAgent = navigator.userAgent;
+        let mimeTypes = navigator.mimeTypes;
+
+        console.log("Browser Code Name ", browserCodeName);
+        console.log("browserName ", browserName);
+        console.log("platform ", platform);
+        console.log("useAgent ", useAgent);
+        console.log("mimeTypes ", mimeTypes);
+
+        console.log("-----------------------------------------------");
+        for (let temp in navigator.mimeTypes) {
+            console.log(navigator.mimeTypes[temp].type);
+        }
+    </script>
+</body>
+
+</html>
