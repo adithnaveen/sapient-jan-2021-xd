@@ -216,4 +216,95 @@ class MyTodo implements ITodoService {
 
 
 
+interface Employee {
+	name:string, 
+	email:string, 
+	salary: number, 
+	desig: string, 
+	dob:Date
+}
+
+interface IEmployeeService {
+	display(employee:Employee): Employee;
+}
+
+
+
+class EmployeeService implements IEmployeeService {
+
+function display(employee : Employee) {
+	console.log(employee); 
+	console.log(employee.name); 
+	console.log(employee.email); 
+	console.log(employee.salary); 
+	console.log(employee.desig); 			
+}
+} 
+
+
+function fnDisplay(employee : Employee) {
+	console.log(employee); 
+	console.log(employee.name); 
+	console.log(employee.email); 
+	console.log(employee.salary); 
+	console.log(employee.desig); 			
+}
+
+display("Harry", "harry@peter.com", 1212, "Manager")
+
+
+
+
+
+enum CarTypes {
+	Ford = Ford, 
+	Maruti = Maruti, 
+	BMW = BMW
+}
+
+
+
+const myFord = factory.createCar(CarTypes.Ford);
+console.log(myFord);
+
+
+
+-- object creation 1 
+abstract class Dad {
+	pray() {
+		log("Every day pray")
+	}
+	
+	abstract graduate() ;
+	
+}
+
+-- object creation 2
+class You extends Dad{
+	//if you dont have a constructor then 
+	// the constructor is mocked -> invoke super 
+	
+	graduate() {
+		// i dont know which graduation 
+	}
+	
+}
+
+let y = new You(); 
+y.pray(); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -1,4 +1,5 @@
 interface Todo {
+    id: number, 
     name:string, 
     state: TodoState
 } 
@@ -7,18 +8,21 @@ class TodoService {
     static todoId: number =0; 
 
     constructor(private todos : Todo[]) {}
+    
     add(todo: Todo) {
-        let newId = TodoService.getNextId(); 
-        // some code to write to add to todos 
+        let todo1 : Todo =   {id:TodoService.getNextId(), ...todo} ; 
+        this.todos.push(todo1); 
     }
+
     getAll() {
         return this.todos; 
     }
-
-    // create method to delete the todo 
-
-    // create method to get 1 todo which is on top 
-
+    delete(id: number) {
+        this.todos.splice(id, 1); 
+    }
+    getTodo(id: number) {
+        return this.todos.filter(todo => todo.id=== id); 
+    }
     static getNextId() {
         return TodoService.todoId ++; 
     }
@@ -30,7 +34,10 @@ enum TodoState {
     Completed, 
     Deleted 
 }
+
+/*
 let todo : Todo = {
+    id:1, 
     name :"give cloths to dry cleaning", 
     // state : TodoState.Active
     get state() {
@@ -41,3 +48,4 @@ let todo : Todo = {
         this.state = state;
     }
 }; 
+*/ 

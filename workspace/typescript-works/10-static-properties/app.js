@@ -3,14 +3,18 @@ class TodoService {
         this.todos = todos;
     }
     add(todo) {
-        let newId = TodoService.getNextId();
-        // some code to write to add to todos 
+        let todo1 = Object.assign({ id: TodoService.getNextId() }, todo);
+        this.todos.push(todo1);
     }
     getAll() {
         return this.todos;
     }
-    // create method to delete the todo 
-    // create method to get 1 todo which is on top 
+    delete(id) {
+        this.todos.splice(id, 1);
+    }
+    getTodo(id) {
+        return this.todos.filter(todo => todo.id === id);
+    }
     static getNextId() {
         return TodoService.todoId++;
     }
@@ -23,14 +27,17 @@ var TodoState;
     TodoState[TodoState["Completed"] = 2] = "Completed";
     TodoState[TodoState["Deleted"] = 3] = "Deleted";
 })(TodoState || (TodoState = {}));
-let todo = {
-    name: "give cloths to dry cleaning",
+/*
+let todo : Todo = {
+    id:1,
+    name :"give cloths to dry cleaning",
     // state : TodoState.Active
     get state() {
         return this.state;
     },
-    set state(state) {
-        // you can write some BL 
+    set state (state) {
+        // you can write some BL
         this.state = state;
     }
 };
+*/ 

@@ -1,0 +1,82 @@
+REST - Req - Res 
+RESTFUL - Req - Res + Links which you might mostly needed 
+
+REST - Representational state transfer
+RMM - Richardson Maturity Model 
+HATEOAS - Hypermedia as the Engine of Application State
+
+
+RMM - 0 - does not make use of any of URI, HTTP Method
+RMM - 1 - does  make use of any of URI, HTTP Method - Single URI 
+RMM - 2 - makes use of URIs and HTTP out of URI, HTTP Methods
+	http://docere-app.herodu/ - URL 
+	GET /api/users - URI 
+	POST /api/user - URI 
+	PUT /api/user - URI
+	DELETE /api/user/{id} - URI 		
+	GET /api/user/{id} - URI 
+	
+RMM - 3 -   discoverability	
+	GET /api/user/{id} - URI 
+	
+	{
+		userId: 101, 
+		userName:"Harry", 
+		userAddress: {
+			hno:123, 
+			street:"blvd"
+		}, 
+		_links: [
+			{delete: /api/user/{id}}, 
+			{getAll :/api/users } 
+		]
+	}
+	
+	
+
+GET
+http://mywebsite.com/something/something/something/{paramvalue}/{paramvalue}
+
+POST	
+http://mywebsite.com/something/something/something 
+
+	Message : 
+		param1: paramValue 
+		param2: paramValue 
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+Resources
+
+https://swagger.io/specification/
+
+https://martinfowler.com/articles/richardsonMaturityModel.html
+
+
+
+
+
+	
