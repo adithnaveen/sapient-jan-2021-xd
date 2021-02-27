@@ -1,0 +1,33 @@
+{
+    "idCounter": 4,
+    "contacts": [
+        {
+            "id": 1,
+            "name": "Venkat",
+            "email": "venkat@ps.com",
+            "phone": "9349839483",
+            "city": "Landon"
+        },
+        {
+            "id": 2,
+            "name": "Manasvi",
+            "email": "manasvi@ps.com",
+            "phone": "656556656",
+            "city": "New York"
+        },
+        {
+            "name": "Sahil",
+            "email": "sahil@ps.com",
+            "phone": "93343439483",
+            "city": "Reston",
+            "id": 3
+        },
+        {
+            "name": "Mahavir",
+            "email": "mahavir@ps.com",
+            "phone": "90876754",
+            "city": "Cupertino",
+            "id": 4
+        }
+    ]
+}

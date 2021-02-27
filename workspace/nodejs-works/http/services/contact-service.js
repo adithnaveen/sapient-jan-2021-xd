@@ -15,17 +15,17 @@ class ContactService {
             throw new Error("Sorry please enter valid number")
         }
 
-        const contact = this.data.contacts.find(c => c.id ===id); 
-
-        if(contact){
-            return contact; 
-        }else {
-            return null; 
+        for(let contact of this.data.contacts){
+            if(contact.id ===id) {
+                return contact;
+            }
         }
+    return null;
+
     }
 
     getAllContacts() {
-        return [...this.data.contacts]; // spread operator 
+        return [...this.data.contacts]; // spread operator
     }
 
     addContact(contact){
