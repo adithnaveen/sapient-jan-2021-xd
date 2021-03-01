@@ -28,8 +28,8 @@ function getContactsCollection(callback) {
 
 class ContactService  {
 
-  addContact(contact){
- 
+    addContact(contact){
+
     return new Promise((resolve, reject) => {
         if(!contact || typeof contact != 'object') {
             let err ={}; 
@@ -39,43 +39,103 @@ class ContactService  {
             return ;
         }
 
-         // check all the fields are passed
-         const requiredFields = ['name', 'email', 'phone', 'city'];
-         const missingFields = [];
- 
-         requiredFields.forEach(function(field){
-             if(!(field in contact)){
-                 missingFields.push(field)
-             }
-         });
-         if(missingFields.length!==0){
-             let err ={}; 
-             err.code = 1003; 
-             err.message = "required fields missing" + missingFields.join(); 
-             callback(err); 
-             return ;
-         }
+            // check all the fields are passed
+            const requiredFields = ['name', 'email', 'phone', 'city'];
+            const missingFields = [];
+
+            requiredFields.forEach(function(field){
+                if(!(field in contact)){
+                    missingFields.push(field)
+                }
+            });
+            if(missingFields.length!==0){
+                let err ={}; 
+                err.code = 1003; 
+                err.message = "required fields missing" + missingFields.join(); 
+                callback(err); 
+                return ;
+            }
 
         getContactsCollection((err, client, contacts) => {
             if(err) {
                 reject(err); 
                 return ; 
             }
-            contacts.insertOne(contact, (err, doc) => {
-                if(err) {
-                    reject(err); 
-                }else {
-                    resolve(doc.insertedId); 
-                }
-                client.close();
-            })
-
-
+        contacts.insertOne(contact, (err, doc) => {
+            if(err) {
+                reject(err); 
+            }else {
+                resolve(doc.insertedId); 
+            }
+            client.close();
+        })
 
     })
+    }) 
+    }
+
+    getContactById(id) {
+        return new Promise((resolve, reject) => {
+            if(!id || typeof id !== 'string') {
+                let err ={};
+                err.code = 1001;
+                err.message = "it should be in string format "
+                callback(err);
+                return;
+            }
+
+            getContactsCollection((err, client, contacts) => {
+                if(err) {
+                    reject(err); 
+                    client.close(); 
+                    return; 
+                }
+
+                try {
+                    id = new ObjectId(id); 
+                }catch(err) {
+                    reject(err);
+                    client.close();
+                    return ;
+                }
+                contacts.findOne()
+                contacts.findOne({_id : id}, (err, data) => {
+                    if(err) {
+                        reject(err); 
+                    }else {
+                        resolve(data); 
+                    }
+
+                    client.close(); 
+                }); 
+            }); 
+        }); 
+    }
+
+    getAllContacts() {
+        return new Promise((resolve, reject) => {
+            getContactsCollection((err, client, contacts) => {
+                if(err) {
+                    reject(err); 
+                    client.close(); 
+                    return; 
+                }
+
+                contacts.find().toArray((err, data) => {
+                    if(err) {
+                        reject(err); 
+                    }else {
+                        resolve(data)
+                    }
+                    client.close(); 
+                })
+
+            })
+        })
+    }
 
 
-
-
- 
 }
+
+
+module.exports = ContactService;
