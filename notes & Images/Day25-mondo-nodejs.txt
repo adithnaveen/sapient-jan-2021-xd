@@ -1,0 +1,14 @@
+c:\programfiles\mongo4.x\sever\bin (copy)
+
+start -> env -> system/user varible-> edit path -> paste 
+
+to start mongodb 
+>  mongod --dbpath .
+
+> mongo <enter> 
+
+inside the terminal 
+> show dbs; 
+> use sap-db; 
+> db 
+

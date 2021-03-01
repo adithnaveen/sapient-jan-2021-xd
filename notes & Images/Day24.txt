@@ -1,0 +1,84 @@
+Arun - 4 
+Abhi - 4
+Ajit - 4
+Avneesh - 7
+Amy - 3
+Andy - 4
+---------------- 
+26 + (chipper Hamming Code )
+----------------
+Red-Black Tree 
+AVL 
+
+Theory 
+Trie  - Postulate 
+X-Fast Trie - Postulate ( Twitter)
+Y-Fast Trie - LinkedIn, Google, 
+Z-Fast Trie - Theory 
+
+
+				Arun 
+			Ajit 
+		Abhi 
+			
+				Ajit 
+			Abhi	Arun 
+			
+			
+			
+			
+Arun - 4 
+Abhi - 4
+Ajit - 4
+Avneesh - 7
+Amy - 3
+Andy - 4
+
+
+ 
+ 
+ 
+http://localhost:3000/example
+
+Query Parameters  
+http://localhost:3000/example?name=nikhil&age=23
+
+Path Parameters 
+ http://localhost:3000/example/nikhil/23 
+ 
+ 
+ 
+ https://www.amazon.in/Displayport-Thunderbolt-Display-Adapter-Microsoft/dp/B07S2WRKSY/ref=b2b_gw_d_cbs_2
+ 
+ ?
+ 
+ pd_rd_w=ASD9D&pf_rd_p=714b9cc3-a42d-4a3b-ac92-0fd9fd262df3&pf_rd_r=W6VJFVX9RFGT5FB6VHZ3&pd_rd_r=ea573f6d-d596-4d69-b197-4d18160f3cb8&pd_rd_wg=gUaz4&pd_rd_i=B07S2WRKSY&psc=1
+ 
+ 
+ https://github.com/adithnaveen/sapient-freshers-2020/tree/master/drivers
+ 
+ https://github.com/adithnaveen/sapient-freshers-2020?source=tree&branch=master&folder=drivers
+ 
+
+http://tms.heroku.com/users/10/20
+http://tms.heroku.com/users?min=10&max=20 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
