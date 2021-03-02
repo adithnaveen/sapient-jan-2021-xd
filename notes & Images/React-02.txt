@@ -1,0 +1,275 @@
+
+<html>
+	<body>
+	</body>
+</html>
+
+
+<Employee>
+	<FirstName>Naveen</FirstName>
+	<Address>
+		<hno>123</hno> 
+	</Address>
+</Employee>
+
+React can help to have a component 
+
+Modelling the component is done by Redux / NextJS 
+
+Monolithic Application 
+Microservice Application 
+
+MEAN 
+MERN 
+MEVN 
+MENN 
+
+Deploying applications faster 
+Containarization / Orchestration 
+
+
+Client React 
+Server React 
+
+ReactJs - Web Development 
+
+Android 
+iOS
+
+- Cordova - Native (Android, ios, Windows, OSX, Electon)
+
+Java Script 
+
+ <IonButton onClick={() => setShowAlert1(true)} expand="block">Show Alert 1</IonButton>
+     
+
+React Supports 
+1. Stateful Components 
+	Class Based 
+	You can pass props 
+	Life Cycle 
+	class YourClass extends React {
+		render() {}
+		myfunction() {}
+	}
+	Can be called with Props 
+	
+2. Stateless Components 
+	Function Based 
+	You can pass props 
+
+	function myfunction extends SomeClass {} (x)
+
+	<Btn>Hello</Btn>
+	Can be called with Props 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+	<body>
+		<div id="app"></div>
+	</body>
+</html>
+--------------------------------------------------
+By React 
+document.getElementById(app).insert(myelement); 
+--------------------------------------------------
+
+ReactDOM.render(
+	<App val="Something"/>, document.getElementById("app")
+)
+
+---------------------------------------------------
+class App extends React {
+	render() {
+		return(
+			<div>
+				<h1>{this.props.val}</h1>
+				<MySmallApp1></MySmallApp1>
+				<MySmallApp2></MySmallApp2>				
+			</div>
+		); 
+	}
+} 
+
+class MySmallApp1 extends React {
+	render() {
+		return(
+			<SomeApp1></SomeApp1>
+			<SomeApp2></SomeApp2>			
+		)
+		}
+
+}
+
+url = http://tms.heroku.com/users 
+
+
+function showUsers() {
+
+let data[] = 
+	fetch(url).
+		then().then(res=> data).catch(); 
+
+return(
+
+	<div>
+		{this.data}
+	</div>
+	) 
+}
+
+<div id="users"></div>
+
+
+class MyClass extends React {
+	// there is a implicit state variable able 
+	constructor() {
+			fetch(url).then().then (this.state.data).catch(); 
+	}
+	// is implicitly called by react 
+	render(){
+		return(
+			<div>{this.state.data}</div>
+		)
+	}
+}
+
+
+
+
+
+
+function hi(){}
+function bye() { }
+
+ReactHooks 
+
+
+import React from "react"; 
+class Hi extends React{
+
+}
+
+
+<img src=""/>
+
+
+<App />
+<hr /> 
+<br /> 
+
+
+
+
+> npx create-react-app app-name 
+
+
+
+
+  npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+We suggest that you begin by typing:
+
+  cd react-demo-01
+  npm start
+
+
+
+Prefix	Method
+imp→	import moduleName from 'module'
+imn→	import 'module'
+imd→	import { destructuredModule } from 'module'
+ime→	import * as alias from 'module'
+ima→	import { originalName as aliasName} from 'module'
+exp→	export default moduleName
+exd→	export { destructuredModule } from 'module'
+exa→	export { originalName as aliasName} from 'module'
+enf→	export const functionName = (params) => { }
+edf→	export default (params) => { }
+met→	methodName = (params) => { }
+fre→	arrayName.forEach(element => { }
+
+imr→	import React from 'react'
+imrd→	import ReactDOM from 'react-dom'
+imrc→	import React, { Component } from 'react'
+imrcp→	import React, { Component } from 'react' & import PropTypes from 'prop-types'
+imrpc→	import React, { PureComponent } from 'react'
+
+
+
+
+
+https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+
+
+
+
+sample.js 
+class Hello {}
+
+export default Hello; 
+
+somefile.js 
+import Hello from 'sample'; 
+h = new Hello(); 
+
+
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+  npm install -g serve
+  serve -s build
+
+
+
+you can host your react app on any web server, here on python 
+
+> python -m SimpleHTTPServer 8000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

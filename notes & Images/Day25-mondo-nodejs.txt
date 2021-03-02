@@ -12,3 +12,10 @@ inside the terminal
 > use sap-db; 
 > db 
 
+
+
+
+{
+    "id": "603ca2cfecfb9e434ca8deea",
+    "address": "http://localhost:3000/api/db/contacts/603ca2cfecfb9e434ca8deea"
+}
