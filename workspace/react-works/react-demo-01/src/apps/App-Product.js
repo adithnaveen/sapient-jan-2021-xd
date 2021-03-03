@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
-import ProductForm from '../ctrl-unctrl-comp/product-form'
+// import ProductForm from '../ctrl-unctrl-comp/product-form'
+import ProductForm from '../ctrl-unctrl-comp/product-form-ctrl'
 
 class App extends Component {
 
