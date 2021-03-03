@@ -2,6 +2,8 @@
 
 import React, { Component } from 'react'
 
+import TextField from './atoms/fields'
+
 import 'bootstrap/dist/css/bootstrap.css'
 
 class ProductForm extends Component {
@@ -124,46 +126,13 @@ class ProductForm extends Component {
 
                 <h3>Product Entry Form</h3>
                 <div className="container" >
-
                     <form className="form" onSubmit={this.addNewProduct}>
-
-                        <div className="form-group row">
-                            <label htmlFor="product-name" className="control-label col-md-4">Product Name </label>
-                            <div className="col-md-8">
-                                <input type="text" onChange={this.tfHandler} name="pname" className="form-control" />
-                            </div>
-                        </div>
-
-                        <div className="form-group row">
-                            <label htmlFor="product-price" className="control-label col-md-4">Product Price </label>
-                            <div className="col-md-8">
-                                <input type="text" onChange={this.tfHandler} name="pprice" className="form-control" />
-                            </div>
-                        </div>
-
-                        <div className="form-group row">
-                            <label htmlFor="customer-contact" className="control-label col-md-4">Customer Contact </label>
-                            <div className="col-md-8">
-                                <input type="text" onChange={this.tfHandler} name="contact" className="form-control" />
-                            </div>
-                        </div>
-
-                        <div className="form-group row">
-                            <label htmlFor="customer-email" className="control-label col-md-4">Customer email </label>
-                            <div className="col-md-8">
-                                <input type="text" onChange={this.tfHandler} name="email" className="form-control" />
-                            </div>
-                        </div>
-
-                        <div className="form-group row">
-                            <label htmlFor="product-pic" className="control-label col-md-4">Product Picture </label>
-                            <div className="col-md-8">
-                                <input type="text" onChange={this.tfHandler} name="pic" className="form-control" />
-                            </div>
-                        </div>
-
+                        <TextField caption="Product Name" name="pname" handler={this.tfHandler} />
+                        <TextField caption="Product price" name="pprice" handler={this.tfHandler} />
+                        <TextField caption="Customer Contact" name="contact" handler={this.tfHandler} />
+                        <TextField caption="Customer Email" name="email" handler={this.tfHandler} />
+                        <TextField caption="Proudct Picture" name="pic" handler={this.tfHandler} />
                         <button className="btn btn-danger">Submit</button>
-
                     </form>
                 </div>
 
@@ -172,7 +141,7 @@ class ProductForm extends Component {
                     {this.state.errorMessages}
                 </ul>
 
-            </div>
+            </div >
         );
     }
 }
