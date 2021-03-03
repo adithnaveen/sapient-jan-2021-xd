@@ -102,10 +102,14 @@ class ProductForm extends Component {
 
         let { formError } = this.state;
 
+        let errorMessages;
+
         if (this.validateForm(formError)) {
+            errorMessages = null;
+            this.setState({ errorMessages });
             alert("Form Submitted... ")
         } else {
-            let errorMessages = Object.values(formError).map((err, idx) =>
+            errorMessages = Object.values(formError).map((err, idx) =>
                 err.length === 0 ? null : <li key={idx}>{err}</li>
             )
 
@@ -114,7 +118,6 @@ class ProductForm extends Component {
             // call render and view gets updated 
             this.setState({ errorMessages });
         }
-
     }
 
     render() {
@@ -123,24 +126,21 @@ class ProductForm extends Component {
 
                 <pre>{JSON.stringify(this.state, null, 3)}</pre>
 
-
                 <h3>Product Entry Form</h3>
                 <div className="container" >
                     <form className="form" onSubmit={this.addNewProduct}>
-                        <TextField caption="Product Name" name="pname" handler={this.tfHandler} />
-                        <TextField caption="Product price" name="pprice" handler={this.tfHandler} />
-                        <TextField caption="Customer Contact" name="contact" handler={this.tfHandler} />
-                        <TextField caption="Customer Email" name="email" handler={this.tfHandler} />
-                        <TextField caption="Proudct Picture" name="pic" handler={this.tfHandler} />
+                        <TextField type="text" caption="Product Name" name="pname" handler={this.tfHandler} />
+                        <TextField type="number" caption="Product price" name="pprice" handler={this.tfHandler} />
+                        <TextField type="text" caption="Customer Contact" name="contact" handler={this.tfHandler} />
+                        <TextField type="email" caption="Customer Email" name="email" handler={this.tfHandler} />
+                        <TextField type="text" caption="Proudct Picture" name="pic" handler={this.tfHandler} />
                         <button className="btn btn-danger">Submit</button>
                     </form>
                 </div>
-
                 <hr />
                 <ul>
                     {this.state.errorMessages}
                 </ul>
-
             </div >
         );
     }
