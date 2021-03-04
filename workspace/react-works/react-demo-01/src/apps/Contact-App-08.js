@@ -31,6 +31,7 @@ class ContactApp extends Component {
                     <div className="col">
                         <ContactList contacts={this.state.contacts} />
                     </div>
+                    <div className="col"></div>
                 </div>
             </div>
         );

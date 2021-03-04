@@ -1,6 +1,7 @@
 import React from 'react'
 
 import ContactCard from './contact-card';
+import loading from './loading'; 
 
 const ContactList = ({ contacts }) => {
 
@@ -12,5 +13,5 @@ const ContactList = ({ contacts }) => {
 
 }
 
-export default ContactList;
+export default loading(ContactList);
 
