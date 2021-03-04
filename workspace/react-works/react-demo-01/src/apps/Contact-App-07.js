@@ -7,7 +7,6 @@ class ContactApp extends Component {
 
 
     render() {
-
         const contacts = [
             {
                 "id": 1,
