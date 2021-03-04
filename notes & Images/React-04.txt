@@ -1,0 +1,51 @@
+npm Yarn 
+life cycle of react 
+multiple components with react [] 
+Virtual Dom 
+TDD - JEST, Enzyme 
+
+
++ Teams 
+Second half we can create components for HandOn 
+
+
+To Install Yarn 
+> npm install -g yarn 
+alternate 
+https://classic.yarnpkg.com/en/docs/install/#mac-stable
+
+> npm i bootstrap 
+> yarn add bootstrap 
+
+> yarn remove bootstrap 
+> npm uninstall yarn
+ 
+ 
+> npm install 
+> yarn  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

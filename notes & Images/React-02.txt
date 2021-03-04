@@ -253,6 +253,57 @@ you can host your react app on any web server, here on python
 
 
 
+render(){
+return(
+ 	<div>
+		<nav><Header /></nav>
+		<div class="col-md6">
+			<Section1/>
+		</div>
+		
+		<div class="col-md6">
+			<Section1/>	
+			</div>	
+		</div>
+		<div>
+			<Footer/>
+		</div>
+	</div>
+)
+}
+
+
+
+
+
+
+function hi(val) {
+	log(name)
+	log(city)
+	
+}
+
+
+
+hi("hi"); 
+let x = {name:"Mahvir", city="Bengaluru"}
+hi(x); 
+
+hi({...x}); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

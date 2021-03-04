@@ -1,0 +1,218 @@
+Fragments
+
+
+render() {
+	return(<div><div><div></div></div></div>)
+}
+
+render() {
+	return(<Fragment>
+		<div></div>
+	</Fragment>)
+}
+
+
+
+
+
+
+
+
+class Table extends React.Component {
+  render() {
+    return (
+      <table>
+        <tr>
+          <Columns />
+        </tr>
+      </table>
+    );
+  }
+}
+
+class Columns extends Component {
+	render() {
+		return(<div>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+		</div>)
+	}
+}
+
+      <table>
+        <tr>
+		 <div>
+		 		<td>1</td>
+		 		<td>2</td>
+		 		<td>3</td>
+		 		</div>
+        </tr>
+      </table>
+
+
+
+
+
+class Table extends React.Component {
+  render() {
+    return (
+      <table>
+        <tr>
+          <Columns />
+        </tr>
+      </table>
+    );
+  }
+}
+
+class Columns extends Component {
+	render() {
+		return(<Fragment>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+		</Fragment>)
+	}
+}
+
+      <table>
+        <tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+        </tr>
+      </table>
+
+
+ 
+ 
+
+
+Stateful v/s Stateless 
+
+
+
+class Hi extends React {}
+
+function Hi(props){
+	return(<div>something</div>)
+}
+
+npx create-react-app myapp 
+
+
+.sh / .bash 
+
+eslint 
+
+
+
+Installing & Configuring eslint to React Application 
+
+Step 0 : npx create-react-app myapp
+Step 1 : cd myapp
+Step 2 : npm i -g eslint 
+Step 3 : eslint --init
+	(this creates a file called .eslintrc.json)
+Step 4: in package.json update 
+ "scripts": {
+ ....
+ "lint": "eslint src/**/*.js"
+ } 
+
+
+istanbul 
+sonar 
+
+1. react - develop 
+2. eslint - best practices 
+3. istanbul / sonar - code coverage (dev/test)
+
+
+npm start 
+npm run lint (configurable)
+
+
+
+class Hi {
+	constructor(empid, empname) {
+		this.empid = empid; 
+		this.empname = empname; 
+	}
+	
+	setEmpId(empId) {
+		this.empId = empId; 
+		// shall i mutate empname 
+	}
+	
+	getEmpId() {
+		return this.empId; 
+	}
+	
+}
+
+
+
+
+
+
+
+<form onsubmit="return somefunction()">
+</form>
+
+
+
+
+
+
+  // ,
+  // "eslintConfig": {
+  //   "extends": [
+  //     "react-app",
+  //     "react-app/jest"
+  //   ]
+  // }
+  // ,
+
+get this back to package.json 
+
+
+  // ,
+    // "lint": "eslint src/**/*.js"
+
+
+,
+  "devDependencies": {
+    // "eslint": "^7.21.0",
+    // "eslint-plugin-react": "^7.22.0"
+  }
+
+
+
+
+
+
+
+function somefunction(val) {}
+
+
+<input type="text" name="something" onchange=somefunction(this) /> 
+
+
+10, 
+0821-8 (4+8)
+
+10-12 
+
+
+small unit - atom 
+collection of atoms - molecules 
+collections of molecules = page 
+
+
+
+
+
+
+
