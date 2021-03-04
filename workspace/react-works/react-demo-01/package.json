@@ -18,7 +18,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "rest-server": "json-server --port=4000 --watch db/data.json"
+    "rest-server": "json-server --port=4000 --watch db/data.json --delay 1500"
   },
   "browserslist": {
     "production": [

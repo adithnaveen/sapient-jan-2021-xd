@@ -5,7 +5,7 @@ import ContactCard from './contact-card';
 const ContactList = ({ contacts }) => {
 
     return (
-        <div className="">
+        <div>
             {contacts.map(c => <ContactCard contact={c} key={c.id} />)}
         </div>
     );

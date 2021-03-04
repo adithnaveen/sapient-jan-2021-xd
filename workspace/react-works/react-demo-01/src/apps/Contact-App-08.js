@@ -7,12 +7,19 @@ class ContactApp extends Component {
         contacts: []
     }
 
-    componentDidMount() {
+    async componentDidMount() {
         // you can use jQuery, fetch, axios 
         // since the state is mutated the render is invoked 
-        fetch("http://localhost:4000/contacts/")
-            .then(resp => resp.json())
-            .then(respJson => this.setState({ contacts: respJson }));
+        // fetch("http://localhost:4000/contacts/")
+        //     .then(resp => resp.json())
+        //     .then(respJson => this.setState({ contacts: respJson }));
+
+
+        let resp = await fetch("http://localhost:4000/contacts/"); 
+        let contacts = await resp.json(); 
+        this.setState({ contacts })
+
+
     }
 
     render() {
@@ -24,7 +31,7 @@ class ContactApp extends Component {
                     <div className="col">
                         <ContactList contacts={this.state.contacts} />
                     </div>
-                </div>col
+                </div>
             </div>
         );
     }
