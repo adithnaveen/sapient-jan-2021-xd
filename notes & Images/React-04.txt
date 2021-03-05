@@ -25,21 +25,40 @@ https://classic.yarnpkg.com/en/docs/install/#mac-stable
 > yarn  
 
 
+contact : [{
+		"id":1, 
+		"name" :"Kumar", 
+		"gender" :"male", 
+		"email":"naveen@probits.in", 
+		"phone":"9900524255", 
+		"picture" :"https://randomuser.me/api/portraits/men/30.jpg"
+	},{},{},{}]
+
+
+
+
+https://randomuser.me/api/portraits/men/30.jpg
+https://randomuser.me/api/portraits/women/30.jpg
 
 
 
 
 
 
+1. Get you data up and validate 
+	 https://github.com/gautam-in/shopping-cart-assignment
+2. Naveen - 13 Repo 
+3.  Home Page
+•	Products Listing Page (PLP)
+•	Login
+•	Register
 
 
 
-
-
-
-
-
-
+@GetMapping("/hi")
+public String sayHi() {
+	return "HI"; 
+}
 
 
 
