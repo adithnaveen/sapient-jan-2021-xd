@@ -1,0 +1,141 @@
+*) React Hooks 
+	2013 - 2017 
+
+var SomeComponent = React.createClass ({
+	render: function() {
+		return(
+			<div>
+				<h1> Hey i'm old Sytled Component </h1> 
+			</div>
+		)
+	}
+})
+2018 - now 
+1. Statefull / class based 
+class MyComponent extends React.Component {
+	state ={}; 
+	render() {
+		return(
+		<div>
+			<h1> Extending Component Class  </h1> 
+		</div>
+		);
+	}
+}
+2. stateless / class less / function 
+props
+function MyComponent() {
+	return (
+		<div>
+			<h1>I'm stateless  </h1> 
+		</div>
+	) ;
+}
+
+3. React Hooks > 16.8 (100% stateless)
+
+function MyFirstReactHook() {
+
+	const [name, setName] = useState("somename");
+
+	return (
+		<div>
+			<h1> Somebody in React Hook ${name} </h1> 
+		</div>
+	) ;
+}
+
+
+const [name, setName] = useState("Harry"); 
+useEffect(() =>{})
+-------------------------------------------------------
+useReducer [name, setName]= useReducer(()=>{}, "Harry"); 
+
+  
+*) Lazy React Component + Suspense 
+*) CSR + SSR 
+	SSR - where the server sends all the related files in 1 go 
+		Application 
+			a.html
+			b.html
+			c.html
+			d.html 
+	CSR - the client has the list of file to be loaded on the go 
+		Application 
+			a.html 
+			b.html 
+			
+*) TDD + (Jest + Enzyme)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ react lazy & suspense 
+ https://blog.bitsrc.io/improve-react-performance-using-lazy-loading-and-suspense-933903171954
+ 
+ 
+ 
+ 
+ 
+ 
+ 

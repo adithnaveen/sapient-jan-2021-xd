@@ -3,14 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
-
-
-import App from './hooks/App-02';
+// import App from './hooks/App-05';
+import App from './lazy/LazyApp'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  
+    <App />, 
+ 
   document.getElementById('root')
 );
 
