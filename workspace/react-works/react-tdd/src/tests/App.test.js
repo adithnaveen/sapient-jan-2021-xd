@@ -1,11 +1,8 @@
 import {render} from '@testing-library/react'
 
-import {shallow, configure} from 'enzyme'
+import {shallow} from 'enzyme'
 // import App from '../App'; 
 import Counter from '../Counter'; 
-import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
-
-configure({adapter : new Adapter()})
 
 
 describe('My Test Counter Application', () => {
