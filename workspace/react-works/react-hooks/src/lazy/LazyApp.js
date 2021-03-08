@@ -8,6 +8,7 @@ import {  Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import Home from './Home'
 const Sample = React.lazy(() => import('./Sample'));
 const Hello = React.lazy(() => import('./Hello'));
+const NotFound = React.lazy(() => import('./NotFound'));
 
 
 const  App =() =>  {
@@ -25,7 +26,7 @@ const  App =() =>  {
                         <Route exact={true} path="/hello">
                             <Hello />
                         </Route>
-                        
+                        <Route component ={NotFound} /> 
                     </Switch>
                 </Suspense>
             </Router>
