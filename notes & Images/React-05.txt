@@ -64,8 +64,28 @@ useReducer [name, setName]= useReducer(()=>{}, "Harry");
 		Application 
 			a.html 
 			b.html 
+
+LazyApp = 10ms
+Hello = 12ms 
+Home = 30 ms 
+Sample = 5 ms 
+---------------- 
+57 ms 
+---------------- 
+
+
+Home = 30 ms 			
+http://localhost:3000/hello - 12ms 
+http://localhost:3000/sample 
+			
+
+import Hello from './Hello'
+const Hello = React.lazy(()=> import './Hello')
+
+
 			
 *) TDD + (Jest + Enzyme)
+*) Virtual DOM 
 
 
 

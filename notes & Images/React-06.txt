@@ -1,0 +1,139 @@
+Given 
+When 
+Then 
+
+And 
+But 
+
+Cucumber 
+Rest Assured 
+Jasmine / Jest / Mocha 
+
+describe("User Story ", () => {
+	test("AC1 ", () => {
+		
+	})
+})
+
+Nikhil 
+const SomeComp = () => {
+	return(
+		<div>
+			<h2>I'm from Some Comp </h2>
+				
+		</div>
+	);  
+}
+
+Monika 
+const AnotherComponent = ()  => {
+
+	return(
+		<div>
+			<h2>Something Goes Here </h2>
+				<SomeComp /> 
+		</div>
+	);  
+}
+
+Bibhu 
+class MyClass extends Component {
+
+	render() {
+		return(
+			<div>
+				<h1>Hi </h1>
+				
+				<AnotherComponent  /> 
+			</div>
+		); 
+	}
+}
+
+			<div>
+				<h1>Hi </h1>
+				
+				<div>
+					<h2>Something Goes Here </h2>
+						<div>
+							<h2>I'm from Some Comp </h2>
+				
+						</div>
+				</div> 
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+npm i --save-dev enzyme enzyme-adapter-react-17
+
+
+
+import { render, screen } from '@testing-library/react';
+import App from './App';
+
+test('renders learn react link', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/learn react/i);
+  expect(linkElement).toBeInTheDocument();
+});
+
+
+
+<filename>.test.js
+
+
+mount(<App />); 
+---------------------------------------------------
+	<App>
+      <Counter>
+        <div>
+          <h1>
+            Counter App
+          </h1>
+        </div>
+      </Counter>
+    </App>
+
+
+shallow(<Counter />)
+----------------------------------------------
+<Counter />
+Counter.test.js
+
+<div>
+            <h1>Counter App</h1>
+            <h3 id="count-value">{count}</h3>
+            <button id="incr-btn" onClick={() => { setCount(count + 1) }} >Increment</button>
+            <button id="decr-btn" onClick={() => { setCount(count - 1) }} >Decrement</button>
+</div>
+
+
+DoSomething  shallow(<DoSomething />)
+DoSomething.test.js 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

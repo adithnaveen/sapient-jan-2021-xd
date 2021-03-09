@@ -1,0 +1,66 @@
+React 
+	- library 
+
+R1 
+
+
+R2 (props)
+
+
+R3 (props + r1 props)
+
+
+R4 (props + r1 Props + r2 props)
+
+
+Flux 
+
+payload 
+const postaction = {type:"ADD_CONTACT", data:name, something:"hello"}; 
+const deleteaction = {type:"DELETE_CONTACT", data:id}
+const putaction = {type:"PUT_CONTACT", data:name}; 
+const getaction = {type="GET_CONTACT", data:id}
+const getallaction = {type="GET_CONTACTS"}
+
+
+dispatch(action); 
+
+
+reducers are functions with switch case 
+
+function reducer(action)
+switch(action.type) {
+	case: 'ADD_CONTACT'  
+		return something; 
+	case: 'DELETE_CONTACT' 
+		return something; 
+	case: 'PUT_CONTACT'
+		return something; 
+	case: 'GET_CONTACT'
+		return something; 
+}
+
+
+Working with redux 
+
+> npx create-react-app redux-works 
+> npm i bootstrap redux 
+> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
