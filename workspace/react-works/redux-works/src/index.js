@@ -12,6 +12,7 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk'
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
+import ContactDetail from './components/ContactDetail';
 const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)));
 
 
@@ -49,6 +50,7 @@ class App extends Component {
                                 <Route path="/" component={Home} exact={true} />
                                 <Route path="/add-new-contact" component={ContactForm} exact={true} />
                                 <Route path="/view-contacts" component={ContactsList} exact={true} />
+                                <Route path="/contact-detail/:id" component={ContactDetail} exact={true} />
                             </div>
 
                         </div>

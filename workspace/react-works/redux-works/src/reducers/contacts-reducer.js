@@ -1,4 +1,4 @@
-import {ADD_CONTACT, DELETE_CONTACT, FETCH_CONTACTS} from '../constants/types';
+import {ADD_CONTACT, DELETE_CONTACT, FETCH_CONTACTS, GET_CONTACT} from '../constants/types';
 
 export default (state = {contacts: []}, action) => {
     switch (action.type) {
@@ -20,7 +20,10 @@ export default (state = {contacts: []}, action) => {
                 }
                 return {...state, contacts};
             }
-
+        case GET_CONTACT :
+        {
+            return {...state, contact: action.data}; 
+        }
         case FETCH_CONTACTS:
             return {...state, contacts: action.data};
         default:

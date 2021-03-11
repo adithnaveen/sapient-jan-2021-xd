@@ -1,6 +1,7 @@
 import {deleteContact} from '../actions/contacts-action'; 
 import {connect} from 'react-redux';
 import React from 'react';
+import {Link} from 'react-router-dom'
 
 const ContactCard = ({ contact, deleteContact}) => (
     <div className="card">
@@ -12,7 +13,12 @@ const ContactCard = ({ contact, deleteContact}) => (
             </div>
             <div className="col-md-7">
                 <div className="card-body">
-                    <h4 className="card-title">{contact.name} <button className="btn btn-danger" 
+                    <h4 className="card-title">
+                        <Link to={"/contact-detail/" + contact.id}>
+                            {contact.name}
+                        </Link> 
+                        
+                         <button className="btn btn-danger" 
                         onClick ={() => {
                            deleteContact(contact.id); 
                         }}

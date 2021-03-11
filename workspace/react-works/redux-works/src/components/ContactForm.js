@@ -79,8 +79,11 @@ class ContactForm extends Component {
             let {name, email, phone, picture} = this.state;
             let contact = {name, email, phone, picture};
  
+            console.log(this.props);
             // redux reducer to be invoked here 
             this.props.addContact(contact); 
+            // routing to view all contacts 
+            this.props.history.push("/view-contacts"); 
 
             this.setState({
                 name: '',

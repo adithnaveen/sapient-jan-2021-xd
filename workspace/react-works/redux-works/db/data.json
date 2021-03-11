@@ -1,14 +1,6 @@
 {
   "contacts": [
     {
-      "id": 2,
-      "name": "Charan",
-      "gender": "male",
-      "email": "charan@ps.com",
-      "phone": "3434343434",
-      "picture": "https://randomuser.me/api/portraits/men/31.jpg"
-    },
-    {
       "id": 6,
       "name": "Monika",
       "gender": "female",
@@ -43,6 +35,34 @@
       "phone": "9009900990",
       "picture": "/somepic",
       "id": 10
+    },
+    {
+      "name": "Harry",
+      "email": "harry@gmail.com",
+      "phone": "3232323232",
+      "picture": "/harryimage",
+      "id": 11
+    },
+    {
+      "name": "peter",
+      "email": "peter@gmail.com",
+      "phone": "7897897897",
+      "picture": "/peterimage",
+      "id": 12
+    },
+    {
+      "name": "hello",
+      "email": "hello@gmail.com",
+      "phone": "9090909090",
+      "picture": "/hello",
+      "id": 13
+    },
+    {
+      "name": "testing",
+      "email": "testin@gmail.com",
+      "phone": "9009900990",
+      "picture": "/testing",
+      "id": 14
     }
   ]
 }
