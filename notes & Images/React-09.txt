@@ -1,0 +1,126 @@
+CSR vs SSR 
+
+
+
+CSR - React 
+SSR - React 
+
+Observables - Reactive Approach 
+	- CallBack 
+	- Promise 
+	- Rx 
+	
+	fetch, axios, $.http (promise) .then (chain of responsibility only once)
+	
+	$https-subscriber 
+		.subscribe()
+		.subscribe()
+		.subscribe()
+	
+main() {
+	hi();
+}	
+
+hi(){
+	bye();
+}
+
+bye() {
+	/some work 
+}
+	
+	
+let x = fetch("url");
+log("Hello"); 
+	
+	
+let x = fetch("url")
+	.then().then().then()
+	
+
+	
+	
+Authenticate 
+	- user name & password 
+		username:Hi 
+		password:bye 
+		
+		Passport 
+		MD5, Bcrypt, AES, DES 
+		
+		4 - somecode 
+		bye -> asldkfja -> 3lkjrlkjdf -> vlkdjf kjdlfk -> 3lk4jdlfk324jl
+		
+		
+		
+		
+		
+		
+		<% if (user) { %>
+		  <h2><%= user.name %></h2>
+		<% } %>
+		
+		
+<% writing business logic  %>
+<%= variable substitution  %>		
+		
+		
+		connect.sid=s:lrAJ6ox2B8aLc2Ci5056AbfnrryKhQg7.qrRpHpU1uiWv1jpUmyhdtWh6vDopBWBTnXScOt+8afw; Path=/; Expires=Thu, 11 Mar 2021 09:00:37 GMT; HttpOnly
+		
+		
+		Google, LinkedIn, github, twitter (OAuth), firebase 
+GDPR - EU 
+
+Microservices & Stratergy / Design Priciples 
+Open / Closed Principle (Context Boundry)
+
+
+
+
+
+
+
+
+class MyClass extends Component {
+
+	render() {
+		let company = {
+			website:"something.com", 
+			address:"some address"
+		}
+		return(
+			<AppHeader {...company} />
+		);
+	}
+}
+
+
+const AppHeader =({website, address}) => {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
