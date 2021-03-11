@@ -1,0 +1,54 @@
+CSR vs SSR 
+
+
+
+CSR - React 
+SSR - React 
+
+Observables - Reactive Approach 
+	- CallBack 
+	- Promise 
+	- Rx 
+	
+	fetch, axios, $.http (promise) .then (chain of responsibility only once)
+	
+	$https-subscriber 
+		.subscribe()
+		.subscribe()
+		.subscribe()
+	
+main() {
+	hi();
+}	
+
+hi(){
+	bye();
+}
+
+bye() {
+	/some work 
+}
+	
+	
+let x = fetch("url");
+log("Hello"); 
+	
+	
+let x = fetch("url")
+	.then().then().then()
+	
+
+	
+	
+Authenticate 
+	- user name & password 
+		username:Hi 
+		password:bye 
+		
+		Passport 
+		MD5, Bcrypt, AES, DES 
+		Google, LinkedIn, github, twitter (OAuth), firebase 
+GDPR - EU 
+
+Microservices & Stratergy / Design Priciples 
+Open / Closed Principle (Context Boundry)

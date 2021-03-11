@@ -1,0 +1,46 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /Users/naveenkumar/.local/bin:/Users/naveenkumar/Library/Android/sdk/platform-tools:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Users/naveenkumar/.local/bin:/Users/naveenkumar/Library/Android/sdk/platform-tools:/Volumes/Kanchan/Softwares/sonar-scanner/sonar-scanner-4.2.0.1873-macosx/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin/:/Volumes/Kanchan/Softwares/mongo-db/bin:/Volumes/Kanchan/Softwares/maven/maven-3.6/bin:/Library/Java/JavaVirtualMachines/openjdk-11.0.2.jdk/Contents/Home/bin:/usr/local/mysql/bin:/Library/PostgreSQL/11/bin:/Volumes/Kanchan/Softwares/protoc/protoc-3.12.3-osx-x86_64/bin:/Volumes/Kanchan/__home/gpush.sh:/Volumes/Kanchan/Softwares/sonar-scanner/sonar-scanner-4.2.0.1873-macosx/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin/:/Volumes/Kanchan/Softwares/mongo-db/bin:/Volumes/Kanchan/Softwares/maven/maven-3.6/bin:/Library/Java/JavaVirtualMachines/openjdk-11.0.2.jdk/Contents/Home/bin:/usr/local/bin:/usr/local/mysql/bin:/Library/PostgreSQL/11/bin:/usr/local/go/bin:/Volumes/Kanchan/Softwares/protoc/protoc-3.12.3-osx-x86_64/bin:/Volumes/Kanchan/__home/gpush.sh
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.15.5
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Volumes/Kanchan/MyTrainings/sapient/freshers-2021-jan-xd/workspace/reactive-works/package.json: Unexpected token } in JSON at position 313
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "reactive-works",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "rxjs": "^6.6.6",
+      "@akanass/rx-http-request": "^3.3.0",
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
