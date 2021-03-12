@@ -1,0 +1,113 @@
+
+Microservices & Stratergy / Design Priciples 
+Open / Closed Principle (Context Boundry)
+
+AntiPattern 
+pms-automation - Selenium / Ranorex/ Browserstack / Tosca 
+pms-ui - Angular / React / Vue / jQuery 
+
+Services
+------------------------------
+pms-category-service
+pms-product-service
+pms-user-service
+pms-zuul
+pms-eureka
+
+
+CLI -> 1 Tier (app + db) -> 2 Tier (app, db) -> 3 Tier (user, app, db) -> GUI -> Monolithc application (asp, python, j2ee) -> microservice (cohisive approach) 
+
+
+
+
+db.properties
+----------------------------
+db=test
+username=root
+password=something 
+
+
+public boolean connectDB() {
+	
+	Properties prop = new Properties(); 
+	prop.load("db.properties"); 
+	
+	username = prop.get("username"); 
+	password = prop.get("password"); 
+	
+	Class.for("com.mysql.jdbc.Driver"); 
+	Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306"prop.get("db") +, username, pass); 
+	return conn!=null; 
+	
+}
+
+
+Step 1 compile 
+step 2 execute 
+
+
+MicroService = services (BL)
+MicroFrontEnd = UI 
+
+
+
+> docker run hello-world
+
+
+
+docker run -it ubuntu bash
+
+
+docker pull mongo
+
+
+$ docker run --name sapient-mongo1 -p 27017:27017 -d mongo 
+
+
+docker run --name sapient-mongo4 -p 27017:27017  mongo
+
+docker run --name sapient-mongo4 -p 27018:27017  mongo
+docker run --name sapient-mongo4 -p 27019:27017  mongo
+docker run --name sapient-mongo4 -p 27020:27017  mongo
+docker run --name sapient-mongo4 -p 27021:27017  mongo
+docker run --name sapient-mongo4 -p 27022:27017  mongo
+docker run --name sapient-mongo4 -p 27023:27017  mongo
+
+> 
+
+Steps for Building React Project 
+1. Write React Code 
+2. To run React you need node image(docker)
+3. 
+
+
+				|docker image node 
+				|
+	copy		|
+i node_modules	|
+	npm start	|
+				|
+
+
+4. Every project have a file called "Dockerfile""
+FROM 
+COPY / ADD
+RUN npm install
+CMD npm start 
+
+
+once you 
+to build docker file 
+> docker build -t adithnaveen/react-app4
+
+To run docker container 
+> docker run --name react-app-2 -p 3001:3001 adithnaveen/react-app5
+
+> docker run --name react-app-3 -p 3005:3000 adithnaveen/react-app5
+
+
+Introduction to DevOps
+
+Docker 
+Jenkins (CI/CD)
+GitHooks / BitBucket 
