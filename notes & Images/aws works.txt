@@ -146,6 +146,56 @@ scp -i <.pem> -r <from> <to>
 
 
 
+[15:21] Naveen Kumar Srinivas
+mahavir- somen, hirak 
+bibhu - aaishiq, ujjwal, nagesh, 
+astha - venkat, rishab, monika 
+chitraksh - sahil, ganesh, kartik, yoga 
+manasvi - rishi, vidya 
+utkarsh -ankit, avneesh, sai,  
+shalini- nikhil, 
+
+
+kartik 
+
+1. get jenkins up 
+2. docker up 
+3. create jenkins file 
+4. dockerfile 
+5. build 
+
+
+
+node{
+        try{
+                
+            sh 'docker kill react-app'
+            }
+        catch(e){
+            sh "echo no containers"
+        }
+		
+		
+        try{
+            
+        sh 'docker rm  react-app'
+        }
+        catch(e){
+            sh "echo no containers"
+        }            
+}
+ 
+node{
+        checkout scm
+        stage ('Building React container') {
+                sh 'docker build -t react/app .'
+        }
+        stage ('Running React container') {
+                sh 'docker run  --name=react-app  -d -p 3000:3000 react/app'
+        }
+}
+
+
 
 
 
