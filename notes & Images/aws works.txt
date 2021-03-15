@@ -1,0 +1,159 @@
+Docerize React JS Application 
+
+> java -jar jenkins-2.277_1.war
+will host on 8080
+> java -jar jenkins-2.277_1.war --httpPort=9090
+
+1. Freestyle project 
+	write any SH / BAT commands 
+2. Pipeline Project 
+	2.a) 
+		groovy - in jenkins console (UI)
+		
+	2.b) 
+		groovy - in your code repository 
+		project through a "Jenkinsfile" 
+		
+		install Blue Ocean + NodeJS 
+		
+		
+
+level 1 - Node
+level 2 - stage
+level 3 - step 
+
+
+1. goto github.com 
+2. create a repo call react-app 
+3. in your system do git clone of the repo 
+4. cd react-app 
+5. copy any 1 project which we have done into this folder (except node_module)
+6. git add . 
+7. git commit -m "initial version"
+8. git push origin master
+
+
+
+
+
+
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}
+
+----------------------------------------------------------------------------
+
+pipeline {
+    agent any
+
+    tools {
+       nodejs "node"
+    }
+
+    stages {
+		stage('Hello'){
+			steps {
+				echo "hello world"
+				sh 'npm --version'
+			}
+		}
+		
+        stage('Git') {
+            steps {
+               git 'https://github.com/adithnaveen/react-jenkins-docker.git';  
+            }
+        }
+		
+		stage('Build') {
+			steps {
+				sh 'npm install'
+				sh 'npm start'
+			}
+		}
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+pipeline {
+    agent any 
+    stages {
+        stage('Sapinet-Build') { 
+            steps {
+                // sh or bat commands 
+            }
+            steps {
+                // 
+            }
+        }
+        stage('Test') { 
+            steps {
+                // 
+            }
+        }
+        stage('Deploy') { 
+            steps {
+                // 
+            }
+        }
+    }
+}
+
+
+
+GitHube - Jenkins - Docker 
+
+
+
+
+1. login aws with the pem file available 
+2. to update the linux system sudo yum update -y 
+3. to install docker 
+	> sudo yum update -y docker 
+4. sudo dockerd (which will start docker)
+5. open another terminal 	
+	> sudo docker run hello-world 
+6. to install node js 
+	> sudo yum install -y gcc-c++ make
+	> curl -sL https://rpm.nodesource.com/setup_14.x | sudo -E bash -
+
+
+
+scp -i <.pem> -r <from> <to>
+/home/ec2-user/react-app
+
+
+
+
+> sudo yum install java-1.8.0-openjdk -y 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
